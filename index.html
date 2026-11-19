@@ -1981,21 +1981,7 @@
       document.getElementById('adminModal').classList.add('hidden');
     }
 
-    document.getElementById('adminLoginForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const user = document.getElementById('adminUserInput').value.trim().toLowerCase();
-      const pass = document.getElementById('adminPassInput').value;
-      const creds = getStorage(STORAGE_KEYS.ADMIN_AUTH, { user: 'mario', pass: 'rino2026' });
-
-      if (user === creds.user && pass === creds.pass) {
-        sessionStorage.setItem(STORAGE_KEYS.ADMIN_SESSION, 'true');
-        document.getElementById('navAdminBtnText').textContent = 'Panel Mario';
-        showDashboardView();
-        showToast('Bienvenido al panel privado, Mario.');
-      } else {
-        showToast('Usuario o contraseña incorrectos.', 'error');
-      }
-    });
+  
 
     function logoutAdmin() {
       sessionStorage.removeItem(STORAGE_KEYS.ADMIN_SESSION);
