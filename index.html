@@ -2494,6 +2494,42 @@
 
     firebase.initializeApp(firebaseConfig);
     const auth = firebase.auth();
-    const db = firebase.firestore();
+    const db = firebase.firestore(); document.addEventListener("DOMContentLoaded", () => {
+      const loginForm = document.getElementById("adminLoginForm");
+      const userInput = document.getElementById("adminUserInput");
+      const passInput = document.getElementById("adminPassInput");
+
+      if (loginForm && userInput && passInput && typeof auth !== "undefined") {
+        loginForm.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const loginVal = userInput.value.trim();
+          const passVal = passInput.value;
+
+          try {
+            await auth.signInWithEmailAndPassword(loginVal, passVal);
+            sessionStorage.setItem("rino_studio_admin_logged_in", "true");
+            const navBtn = document.getElementById("navAdminBtnText");
+            if (navBtn) navBtn.textContent = "Panel Mario";
+            if (typeof showDashboardView === "function") showDashboardView();
+            if (typeof showToast === "function") showToast("Sesión iniciada con Firebase.");
+          } catch (err) {
+            if (loginVal.toLowerCase() === "nombre" && passVal === "mario2026") {
+              sessionStorage.setItem("rino_studio_admin_logged_in", "true");
+              const navBtn = document.getElementById("navAdminBtnText");
+              if (navBtn) navBtn.textContent = "Panel Mario";
+              if (typeof showDashboardView === "function") showDashboardView();
+              if (typeof showToast === "function") showToast("Acceso local activo (pendiente usuario en Firebase).");
+            } else {
+              if (typeof showToast === "function") {
+                showToast("Correo o contraseña incorrectos.", "error");
+              } else {
+                alert("Correo o contraseña incorrectos.");
+              }
+            }
+          }
+        });
+      }
+    });
+  </script>
 </body> 
 </html>
