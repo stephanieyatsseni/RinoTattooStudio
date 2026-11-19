@@ -1,0 +1,2482 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RINO TATTOO STUDIO | Arte que queda para siempre · San Antonio, Chile</title>
+  <meta name="description" content="Estudio profesional de tatuajes autorizado por SEREMI de Salud en Avenida Chile 378, Llolleo, San Antonio, Chile. Realismo Black & Grey, Oriental, Color y Coberturas." />
+  <meta name="keywords" content="tatuajes San Antonio, tatuador Llolleo, Rino Tattoo Studio, realismo black and grey Chile, estudio tatuajes Seremi" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tipografías Góticas, Editoriales y Minimalistas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#000000',
+            charcoal: '#0A0A0B',
+            graphite: '#131316',
+            gold: {
+              light: '#E6CFA0',
+              DEFAULT: '#C5A059',
+              dark: '#8E6F32',
+            },
+            silver: '#A3A3A3'
+          },
+          fontFamily: {
+            gothic: ['UnifrakturMaguntia', 'Cinzel Decorative', 'serif'],
+            display: ['Cinzel Decorative', 'Cinzel', 'serif'],
+            serif: ['Cinzel', 'serif'],
+            editorial: ['Cormorant Garamond', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --bg-pure: #000000;
+      --bg-surface: #0A0A0B;
+      --gold: #C5A059;
+      --gold-light: #E6CFA0;
+      --silver: #A3A3A3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      background-color: #000000;
+      color: #F5F5F5;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
+    }
+
+    /* Scrollbar Minimalista Oscura */
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #000000;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #222226;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C5A059;
+    }
+
+    /* Integración perfecta del Logo Oficial sobre Negro Puro (Eliminando fondo blanco) */
+    .official-logo-wrapper {
+      position: relative;
+      border-radius: 9999px;
+      overflow: hidden;
+      background-color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .official-logo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 52%;
+      border-radius: 9999px;
+      /* Recorte ajustado al círculo negro del emblema oficial */
+      transform: scale(1.24);
+      filter: contrast(1.08) brightness(1.02);
+      transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .official-logo-wrapper:hover .official-logo-img {
+      transform: scale(1.28);
+    }
+
+    /* Animación flotante sutil para la portada */
+    @keyframes heroFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+    @keyframes ambientHalo {
+      0%, 100% { box-shadow: 0 0 55px rgba(255, 255, 255, 0.06), 0 0 110px rgba(197, 160, 89, 0.08); }
+      50% { box-shadow: 0 0 75px rgba(255, 255, 255, 0.11), 0 0 140px rgba(197, 160, 89, 0.16); }
+    }
+    .hero-emblem-container {
+      animation: heroFloat 6s ease-in-out infinite, ambientHalo 5s ease-in-out infinite;
+    }
+
+    /* Bordes y divisores estilo Black Abbey */
+    .gold-line {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(197, 160, 89, 0.65), transparent);
+    }
+
+    .luxury-card {
+      background: linear-gradient(180deg, rgba(16, 16, 18, 0.92) 0%, rgba(8, 8, 9, 0.98) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .luxury-card:hover {
+      border-color: rgba(197, 160, 89, 0.5);
+      box-shadow: 0 14px 36px -12px rgba(0, 0, 0, 0.9), 0 0 20px rgba(197, 160, 89, 0.08);
+    }
+
+    /* Inputs y formularios oscuros */
+    .studio-input {
+      background-color: #070708;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: #FFFFFF;
+      transition: all 0.25s ease;
+    }
+    .studio-input:focus {
+      outline: none;
+      border-color: #C5A059;
+      box-shadow: 0 0 0 2px rgba(197, 160, 89, 0.18);
+    }
+    .studio-input::-webkit-calendar-picker-indicator {
+      filter: invert(0.85) sepia(40%) saturate(450%) hue-rotate(10deg);
+      cursor: pointer;
+    }
+
+    /* Fade transitions */
+    .fade-in {
+      animation: fadeIn 0.35s ease forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-obsidian text-gray-100 antialiased selection:bg-gold selection:text-black">
+
+  <!-- ==================== NOTIFICACIONES FLOTANTES (TOASTS) ==================== -->
+  <div id="toastContainer" class="fixed top-24 right-4 z-[120] flex flex-col gap-2.5 max-w-sm pointer-events-none"></div>
+
+  <!-- ==================== BARRA DE NAVEGACIÓN SUPERIOR ==================== -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-black/92 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Emblema Oficial + Nombre Comercial -->
+        <a href="#inicio" class="flex items-center gap-3.5 group shrink-0">
+          <div class="official-logo-wrapper w-12 h-12 border border-white/25 group-hover:border-gold transition-colors">
+            <img
+              src="./assets/logo-rino.jpg"
+              alt="Logo Oficial Rino Tattoo Studio"
+              class="official-logo-img js-official-logo"
+              onerror="handleLogoFallback(this)"
+            />
+          </div>
+          <div>
+            <span class="block font-serif font-bold text-sm sm:text-base tracking-[0.22em] text-white group-hover:text-gold transition-colors">
+              RINO TATTOO
+            </span>
+            <span class="block text-[9px] sm:text-[10px] tracking-[0.28em] text-gold uppercase mt-0.5">
+              STUDIO · LLOLLEO, CHILE
+            </span>
+          </div>
+        </a>
+
+        <!-- Menú Principal Desktop (Estilo editorial Black Abbey) -->
+        <nav class="hidden lg:flex items-center gap-6 text-[11px] font-medium tracking-[0.17em] uppercase">
+          <a href="#inicio" class="text-gold border-b border-gold pb-1 transition-colors">Inicio</a>
+          <a href="#estudio" class="text-gray-300 hover:text-gold transition-colors">El Estudio</a>
+          <a href="#galeria" class="text-gray-300 hover:text-gold transition-colors">Galería</a>
+          <a href="#tarifas-dresscode" class="text-gray-300 hover:text-gold transition-colors">Cotizar y Dress Code</a>
+          <a href="#cuidados" class="text-gray-300 hover:text-gold transition-colors">Cuidados</a>
+          <a href="#contacto" class="text-gray-300 hover:text-gold transition-colors">Contacto</a>
+        </nav>
+
+        <!-- Acciones Derecha -->
+        <div class="hidden sm:flex items-center gap-3">
+          <button
+            onclick="openAdminModal()"
+            class="px-3.5 py-2 rounded border border-white/20 hover:border-gold text-[10px] tracking-[0.16em] uppercase text-gray-300 hover:text-gold transition-all flex items-center gap-2"
+            title="Panel privado exclusivo para Mario"
+          >
+            <i class="fa-solid fa-shield-halved text-gold"></i>
+            <span id="navAdminBtnText">Acceso Tatuador</span>
+          </button>
+
+          <a
+            href="#reservar"
+            class="px-4 py-2.5 rounded bg-gold hover:bg-gold-light text-black font-bold text-[10px] tracking-[0.18em] uppercase transition-all flex items-center gap-2 shadow-lg shadow-gold/10"
+          >
+            <i class="fa-regular fa-calendar-check"></i>
+            <span>Reservar Hora</span>
+          </a>
+        </div>
+
+        <!-- Botón Hamburguesa Móvil -->
+        <button id="mobileMenuBtn" aria-label="Abrir menú" class="lg:hidden p-2.5 rounded border border-white/15 text-gray-200 hover:text-gold hover:border-gold transition-colors">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-charcoal border-b border-white/10 px-4 pt-3 pb-6 space-y-2.5">
+      <a href="#inicio" onclick="closeMobileMenu()" class="block py-2 text-xs tracking-[0.18em] uppercase text-gold border-b border-white/5">Inicio</a>
+      <a href="#estudio" onclick="closeMobileMenu()" class="block py-2 text-xs tracking-[0.18em] uppercase text-gray-300 border-b border-white/5">Sobre el Estudio</a>
+      <a href="#galeria" onclick="closeMobileMenu()" class="block py-2 text-xs tracking-[0.18em] uppercase text-gray-300 border-b border-white/5">Galería de Trabajos</a>
+      <a href="#tarifas-dresscode" onclick="closeMobileMenu()" class="block py-2 text-xs tracking-[0.18em] uppercase text-gray-300 border-b border-white/5">Cómo Cotizar, Tarifas y Dress Code</a>
+      <a href="#cuidados" onclick="closeMobileMenu()" class="block py-2 text-xs tracking-[0.18em] uppercase text-gray-300 border-b border-white/5">Cuidados Posteriores</a>
+      <a href="#contacto" onclick="closeMobileMenu()" class="block py-2 text-xs tracking-[0.18em] uppercase text-gray-300 border-b border-white/5">Ubicación y Contacto</a>
+      <div class="pt-3 grid grid-cols-1 gap-2.5">
+        <a href="#reservar" onclick="closeMobileMenu()" class="w-full py-3 rounded bg-gold text-black font-bold text-center text-xs tracking-[0.18em] uppercase">
+          Reservar una Hora
+        </a>
+        <button onclick="closeMobileMenu(); openAdminModal();" class="w-full py-3 rounded border border-gold/40 text-gold font-semibold text-center text-xs tracking-[0.18em] uppercase">
+          <i class="fa-solid fa-lock mr-1.5"></i> Panel Privado Tatuador
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== PORTADA PRINCIPAL (INSPIRADA EN DISEÑO.JPEG) ==================== -->
+  <section id="inicio" class="relative pt-20 min-h-screen flex flex-col justify-between bg-obsidian overflow-hidden">
+    <!-- Luz ambiental sutil sobre negro profundo -->
+    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(circle at 72% 45%, rgba(255,255,255,0.035) 0%, rgba(197,160,89,0.04) 30%, rgba(0,0,0,1) 72%);"></div>
+
+    <!-- Contenido Principal Split -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-auto py-12 lg:py-16 relative z-10 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+
+        <!-- Columna Izquierda: Tipografía Gótica + Frase Principal + Botones -->
+        <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+          <p class="text-[10px] sm:text-xs font-semibold tracking-[0.28em] text-gold uppercase">
+            ESTUDIO AUTORIZADO POR SEREMI DE SALUD · SAN ANTONIO
+          </p>
+
+          <h1 class="font-gothic text-5xl sm:text-6xl lg:text-7xl xl:text-[5.3rem] text-white leading-[1.06] tracking-normal">
+            Arte que queda<br/>
+            <span class="text-gold-light">para siempre.</span>
+          </h1>
+
+          <!-- Separador Ornamental Gótico -->
+          <div class="flex items-center justify-center lg:justify-start gap-3 py-1">
+            <div class="h-[1px] w-16 sm:w-24 bg-gradient-to-r from-transparent to-gold"></div>
+            <span class="text-gold text-xs">❖</span>
+            <div class="h-[1px] w-16 sm:w-24 bg-gradient-to-l from-transparent to-gold"></div>
+          </div>
+
+          <p class="text-gray-300 text-sm sm:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
+            Tatuajes personalizados en un entorno privado, estéril y artístico. Especialistas en <strong class="text-white font-medium">Realismo Black & Grey, Oriental, Color y Coberturas</strong> de alta complejidad en <span class="text-gold">Avenida Chile 378, Llolleo</span>.
+          </p>
+
+          <!-- Botones CTA Duales (Exactos al prototipo Black Abbey) -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a
+              href="#reservar"
+              class="w-full sm:w-auto px-7 py-4 rounded bg-gold hover:bg-gold-light text-black font-bold text-xs tracking-[0.18em] uppercase transition-all flex items-center justify-center gap-2.5 shadow-xl shadow-gold/15"
+            >
+              <i class="fa-solid fa-pen-nib"></i>
+              <span>Reservar una Hora</span>
+            </a>
+
+            <a
+              href="#galeria"
+              class="w-full sm:w-auto px-7 py-4 rounded bg-transparent hover:bg-white/[0.05] text-white border border-white/25 hover:border-gold font-semibold text-xs tracking-[0.18em] uppercase transition-all flex items-center justify-center gap-3"
+            >
+              <span>Ver Nuestros Trabajos</span>
+              <i class="fa-solid fa-arrow-right text-gold"></i>
+            </a>
+          </div>
+
+          <!-- Acceso rápido a Instagram y WhatsApp -->
+          <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-5 text-xs text-gray-400">
+            <a href="https://www.instagram.com/rinotattoostudio?utm_source=ig_web_button_share_sheet&knvt=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors flex items-center gap-2">
+              <i class="fa-brands fa-instagram text-gold text-base"></i>
+              <span>@rinotattoostudio</span>
+            </a>
+            <span class="text-white/20">|</span>
+            <a href="https://wa.me/56937822387?text=Hola%20Rino%20Tattoo%20Studio,%20quisiera%20consultar%20por%20un%20tatuaje." target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-gold text-base"></i>
+              <span>+56 9 3782 2387</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: LOGO OFICIAL DE RINO TATTOO STUDIO SIN FONDO BLANCO (SOLO EL EMBLEMA DENTRO DEL NEGRO) -->
+        <div class="lg:col-span-5 flex flex-col items-center justify-center relative">
+          <div class="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[420px] lg:h-[420px] rounded-full hero-emblem-container">
+            <div class="official-logo-wrapper w-full h-full border border-white/15">
+              <img
+                src="./assets/logo-rino.jpg"
+                alt="Emblema Oficial Rino Tattoo Studio"
+                class="official-logo-img js-official-logo"
+                onerror="handleLogoFallback(this)"
+              />
+            </div>
+          </div>
+
+          <!-- Botón discreto por si se previsualiza antes de copiar logo-rino.jpg en VS Code -->
+          <div id="logoUploadHelper" class="mt-4 text-center">
+            <label class="cursor-pointer inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.09] border border-white/10 text-[10px] tracking-[0.14em] uppercase text-gray-400 hover:text-gold transition-all">
+              <i class="fa-solid fa-image text-gold"></i>
+              <span>Cargar archivo de Logo Oficial si aún no está en /assets</span>
+              <input type="file" accept="image/*" class="hidden" onchange="uploadOfficialLogoFile(event)" />
+            </label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Franja de 5 Pilares del Estudio (Exacta al diseño de referencia) -->
+    <div class="border-t border-b border-white/10 bg-charcoal/90 relative z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
+
+          <div class="flex flex-col items-center justify-center px-2 pt-1 md:pt-0">
+            <i class="fa-solid fa-skull text-gold text-lg mb-2"></i>
+            <h2 class="font-serif text-[11px] font-bold tracking-[0.16em] text-white uppercase">Diseños a Medida</h2>
+            <p class="text-[11px] text-gray-400 mt-1">Piezas exclusivas creadas para ti</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center px-2 pt-4 md:pt-0">
+            <i class="fa-solid fa-award text-gold text-lg mb-2"></i>
+            <h2 class="font-serif text-[11px] font-bold tracking-[0.16em] text-white uppercase">Autorizado SEREMI</h2>
+            <p class="text-[11px] text-gray-400 mt-1">Resolución sanitaria vigente</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center px-2 pt-4 md:pt-0">
+            <i class="fa-solid fa-cross text-gold text-lg mb-2"></i>
+            <h2 class="font-serif text-[11px] font-bold tracking-[0.16em] text-white uppercase">Higiene Primero</h2>
+            <p class="text-[11px] text-gray-400 mt-1">Material 100% estéril y desechable</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center px-2 pt-4 md:pt-0">
+            <i class="fa-solid fa-compass-drafting text-gold text-lg mb-2"></i>
+            <h2 class="font-serif text-[11px] font-bold tracking-[0.16em] text-white uppercase">Todos los Estilos</h2>
+            <p class="text-[11px] text-gray-400 mt-1">Black & Grey, Realismo, Oriental y Color</p>
+          </div>
+
+          <div class="col-span-2 md:col-span-1 flex flex-col items-center justify-center px-2 pt-4 md:pt-0">
+            <i class="fa-solid fa-lock text-gold text-lg mb-2"></i>
+            <h2 class="font-serif text-[11px] font-bold tracking-[0.16em] text-white uppercase">Estudio Privado</h2>
+            <p class="text-[11px] text-gray-400 mt-1">Atención personalizada con reserva</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra Inferior de 4 Columnas (Ubicación, Teléfono, Horarios, Redes) -->
+    <div class="bg-black border-b border-white/10 relative z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-location-dot text-gold text-sm mt-1"></i>
+            <div>
+              <span class="block font-serif font-bold tracking-[0.14em] text-white uppercase text-[11px]">Avenida Chile 378</span>
+              <span class="text-gray-400 text-[11px]">Llolleo, San Antonio, Chile</span>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-phone text-gold text-sm mt-1"></i>
+            <div>
+              <span class="block font-serif font-bold tracking-[0.14em] text-white uppercase text-[11px]">+56 9 3782 2387</span>
+              <span class="text-gray-400 text-[11px]">WhatsApp directo · Mario</span>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <i class="fa-regular fa-clock text-gold text-sm mt-1"></i>
+            <div>
+              <span class="block font-serif font-bold tracking-[0.14em] text-white uppercase text-[11px]">Horarios de Atención</span>
+              <span class="text-gray-400 text-[11px]">Lun – Vie: 09:00–19:00 | Sáb: 09:00–15:00</span>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-share-nodes text-gold text-sm mt-1"></i>
+            <div>
+              <span class="block font-serif font-bold tracking-[0.14em] text-white uppercase text-[11px]">Síguenos</span>
+              <div class="flex items-center gap-3.5 mt-1 text-sm">
+                <a href="https://www.instagram.com/rinotattoostudio?utm_source=ig_web_button_share_sheet&knvt=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-gold transition-colors" aria-label="Instagram Rino Tattoo Studio">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://web.facebook.com/RINOTATTOOS?_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-gold transition-colors" aria-label="Facebook Rino Tattoo Studio">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://wa.me/56937822387" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-gold transition-colors" aria-label="WhatsApp Rino Tattoo Studio">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SOBRE EL ESTUDIO ==================== -->
+  <section id="estudio" class="py-20 lg:py-28 bg-charcoal border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-semibold tracking-[0.26em] text-gold uppercase block">Identidad y Excelencia</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white leading-tight">
+            Estudio Profesional de Tatuajes Autorizado por SEREMI de Salud
+          </h2>
+          <div class="w-20 h-[2px] bg-gold"></div>
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed font-light">
+            En <strong class="text-white font-semibold">Rino Tattoo Studio</strong> cada tatuaje es concebido como una pieza irrepetible. Bajo la dirección artística de <strong class="text-gold">Mario</strong>, trabajamos proyectos de gran escala —espaldas completas, mangas enteras y composiciones anatómicas— con un nivel de detalle fotográfico y contraste profundo.
+          </p>
+          <p class="text-gray-400 text-sm leading-relaxed font-light">
+            Nuestra comunidad de más de <strong class="text-white">5.800 seguidores</strong> respalda años de trayectoria en San Antonio y Llolleo, operando bajo estrictas normativas sanitarias autorizadas por la <strong class="text-white">SEREMI de Salud</strong>.
+          </p>
+
+          <div class="grid grid-cols-3 gap-4 pt-4 border-t border-white/10">
+            <div>
+              <span class="block font-serif text-2xl sm:text-3xl font-bold text-gold">5.8K+</span>
+              <span class="text-[10px] text-gray-400 uppercase tracking-widest">Seguidores</span>
+            </div>
+            <div>
+              <span class="block font-serif text-2xl sm:text-3xl font-bold text-white">100%</span>
+              <span class="text-[10px] text-gray-400 uppercase tracking-widest">Asepsia Clínica</span>
+            </div>
+            <div>
+              <span class="block font-serif text-2xl sm:text-3xl font-bold text-gold">SEREMI</span>
+              <span class="text-[10px] text-gray-400 uppercase tracking-widest">Certificado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="luxury-card p-6 sm:p-8 rounded-xl space-y-5">
+            <div class="flex items-center justify-between border-b border-white/10 pb-4">
+              <div>
+                <h3 class="font-serif text-lg font-bold text-white tracking-wider">Especialidades Artísticas</h3>
+                <p class="text-xs text-gray-400">Estilos principales desarrollados en el estudio</p>
+              </div>
+              <i class="fa-solid fa-crown text-gold text-xl"></i>
+            </div>
+
+            <div class="space-y-3.5">
+              <div class="p-4 rounded-lg bg-black/60 border border-white/5 flex items-start gap-4">
+                <span class="w-8 h-8 rounded bg-gold/10 border border-gold/30 flex items-center justify-center text-gold font-serif font-bold text-xs shrink-0">I</span>
+                <div>
+                  <h4 class="font-serif text-sm font-bold text-white">Realismo Black & Grey</h4>
+                  <p class="text-xs text-gray-400 mt-1">Retratos, fauna salvaje (leones, tigres, águilas, osos), cine de culto, mitología griega y escultura clásica.</p>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-lg bg-black/60 border border-white/5 flex items-start gap-4">
+                <span class="w-8 h-8 rounded bg-gold/10 border border-gold/30 flex items-center justify-center text-gold font-serif font-bold text-xs shrink-0">II</span>
+                <div>
+                  <h4 class="font-serif text-sm font-bold text-white">Blackwork & Surrealismo Gótico</h4>
+                  <p class="text-xs text-gray-400 mt-1">Cráneos de alto contraste, ojos anatómicos con relojes romanos y composiciones oscuras de espalda completa.</p>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-lg bg-black/60 border border-white/5 flex items-start gap-4">
+                <span class="w-8 h-8 rounded bg-gold/10 border border-gold/30 flex items-center justify-center text-gold font-serif font-bold text-xs shrink-0">III</span>
+                <div>
+                  <h4 class="font-serif text-sm font-bold text-white">Oriental, Color & Coberturas</h4>
+                  <p class="text-xs text-gray-400 mt-1">Deidades orientales (Ganesha), mangas japonesas (Pez Koi), piezas a todo color y restauración/cover-up.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALERÍA DE TRABAJOS REALES ==================== -->
+  <section id="galeria" class="py-20 lg:py-28 bg-obsidian border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-10">
+        <span class="text-xs font-semibold tracking-[0.26em] text-gold uppercase">Portafolio Oficial</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white">Trabajos Realizados</h2>
+        <div class="gold-line w-44 mx-auto my-2"></div>
+        <p class="text-gray-400 text-sm font-light">
+          Explora las piezas reales tatuadas en Rino Tattoo Studio. Selecciona cualquier fotografía para verla en detalle o solicitar una cotización similar.
+        </p>
+      </div>
+
+      <!-- Barra de Filtros + Botón para vincular fotos locales en VS Code / PC -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-10">
+        <div id="galleryFilterBar" class="flex flex-wrap items-center justify-center gap-2">
+          <button data-category="todos" class="gallery-filter-btn px-4 py-2 rounded text-[11px] font-bold tracking-[0.15em] uppercase bg-gold text-black transition-all">
+            Todos (<span id="countTodos">17</span>)
+          </button>
+          <button data-category="Realismo Black & Grey" class="gallery-filter-btn px-4 py-2 rounded text-[11px] font-medium tracking-[0.15em] uppercase bg-charcoal text-gray-300 border border-white/10 hover:border-gold transition-all">
+            Realismo Black & Grey
+          </button>
+          <button data-category="Espalda Completa" class="gallery-filter-btn px-4 py-2 rounded text-[11px] font-medium tracking-[0.15em] uppercase bg-charcoal text-gray-300 border border-white/10 hover:border-gold transition-all">
+            Espalda Completa
+          </button>
+          <button data-category="Brazo y Manga" class="gallery-filter-btn px-4 py-2 rounded text-[11px] font-medium tracking-[0.15em] uppercase bg-charcoal text-gray-300 border border-white/10 hover:border-gold transition-all">
+            Brazo y Manga
+          </button>
+          <button data-category="Color y Oriental" class="gallery-filter-btn px-4 py-2 rounded text-[11px] font-medium tracking-[0.15em] uppercase bg-charcoal text-gray-300 border border-white/10 hover:border-gold transition-all">
+            Color y Oriental
+          </button>
+        </div>
+
+        <label class="cursor-pointer px-4 py-2 rounded bg-charcoal hover:bg-graphite border border-gold/30 hover:border-gold text-[11px] tracking-[0.14em] uppercase text-gold flex items-center gap-2 transition-all shrink-0">
+          <i class="fa-solid fa-folder-open"></i>
+          <span>Cargar Fotos desde PC</span>
+          <input type="file" accept="image/*" multiple class="hidden" onchange="batchUploadGalleryPhotos(event)" />
+        </label>
+      </div>
+
+      <!-- Grid Responsivo de Galería -->
+      <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Renderizado dinámicamente por JavaScript -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CÓMO COTIZAR, TARIFAS Y DRESS CODE (INFORMACIÓN OFICIAL DEL WORD) ==================== -->
+  <section id="tarifas-dresscode" class="py-20 lg:py-28 bg-charcoal border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+      <!-- Encabezado -->
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="text-xs font-semibold tracking-[0.26em] text-gold uppercase">Protocolo del Estudio</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Cómo Cotizar, Tarifas y Dress Code</h2>
+        <div class="gold-line w-44 mx-auto"></div>
+        <p class="text-gray-400 text-sm font-light">
+          Información oficial para preparar tu evaluación y asistir cómodamente a tu sesión en Rino Tattoo Studio.
+        </p>
+      </div>
+
+      <!-- Bloque 1: Tarifas Oficiales y Reserva de Cupo -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="luxury-card p-7 rounded-xl text-center relative overflow-hidden">
+          <div class="absolute top-0 inset-x-0 h-1 bg-gold"></div>
+          <span class="text-[10px] font-bold tracking-[0.22em] text-gold uppercase">Agendamiento Oficial</span>
+          <h3 class="font-serif text-lg font-bold text-white mt-2">Reserva de Cupo / Abono</h3>
+          <div class="my-4">
+            <span class="font-serif text-3xl sm:text-4xl font-bold text-white">$25.000</span>
+            <span class="text-xs text-gold font-semibold ml-1">CLP</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Abono requerido para bloquear tu fecha y horario en la agenda. Se descuenta del valor total de tu tatuaje el día de la sesión.
+          </p>
+        </div>
+
+        <div class="luxury-card p-7 rounded-xl text-center relative overflow-hidden">
+          <div class="absolute top-0 inset-x-0 h-1 bg-white/30"></div>
+          <span class="text-[10px] font-bold tracking-[0.22em] text-silver uppercase">Piezas Pequeñas</span>
+          <h3 class="font-serif text-lg font-bold text-white mt-2">Tarifa Mínima Negro Simple</h3>
+          <div class="my-4">
+            <span class="font-serif text-3xl sm:text-4xl font-bold text-white">$30.000</span>
+            <span class="text-xs text-gold font-semibold ml-1">CLP</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Valor base mínimo para tatuajes en tinta negra de formato simple con materiales 100% estériles y desechables.
+          </p>
+        </div>
+
+        <div class="luxury-card p-7 rounded-xl text-center relative overflow-hidden">
+          <div class="absolute top-0 inset-x-0 h-1 bg-gold/60"></div>
+          <span class="text-[10px] font-bold tracking-[0.22em] text-gold uppercase">Pigmentos a Color</span>
+          <h3 class="font-serif text-lg font-bold text-white mt-2">Tarifa Mínima Color Simple</h3>
+          <div class="my-4">
+            <span class="font-serif text-3xl sm:text-4xl font-bold text-white">$35.000</span>
+            <span class="text-xs text-gold font-semibold ml-1">CLP</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Valor base mínimo para diseños simples que incorporen pigmentos de color certificados de alta durabilidad.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bloque 2: Cómo Cotizar vs Dress Code (Exacto a las gráficas del Word) -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- Tarjeta Izquierda: CÓMO COTIZAR -->
+        <div class="luxury-card p-7 sm:p-9 rounded-xl space-y-6">
+          <div class="flex items-center justify-between border-b border-white/10 pb-4">
+            <div>
+              <span class="text-[10px] tracking-[0.24em] text-gold uppercase font-semibold">Guía de Evaluación</span>
+              <h3 class="font-serif text-2xl font-bold text-white mt-1">— Cómo Cotizar —</h3>
+            </div>
+            <i class="fa-solid fa-ruler-combined text-gold text-2xl"></i>
+          </div>
+
+          <ul class="space-y-5 text-sm">
+            <li class="flex items-start gap-4">
+              <span class="w-7 h-7 rounded-full bg-gold/15 border border-gold/40 text-gold font-serif font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">1</span>
+              <p class="text-gray-300 leading-relaxed">
+                <strong class="text-white">Envíanos tu idea o diseño de referencia</strong> explicando en detalle cómo te gustaría el tatuaje.
+              </p>
+            </li>
+
+            <li class="flex items-start gap-4">
+              <span class="w-7 h-7 rounded-full bg-gold/15 border border-gold/40 text-gold font-serif font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">2</span>
+              <p class="text-gray-300 leading-relaxed">
+                <strong class="text-white">Envíanos los centímetros y ubicación</strong> exacta del cuerpo donde deseas realizar la pieza.
+              </p>
+            </li>
+
+            <li class="flex items-start gap-4">
+              <span class="w-7 h-7 rounded-full bg-gold/15 border border-gold/40 text-gold font-serif font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">3</span>
+              <p class="text-gray-300 leading-relaxed">
+                <strong class="text-white">En caso de ser cobertura o restauración</strong>, debes enviar una fotografía del tatuaje que quieres que trabajemos con buena iluminación y distancia donde se pueda apreciar bien la tonalidad y ubicación de este para ser evaluado.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tarjeta Derecha: DRESS CODE OFICIAL -->
+        <div class="luxury-card p-7 sm:p-9 rounded-xl space-y-6">
+          <div class="flex items-center justify-between border-b border-white/10 pb-4">
+            <div>
+              <span class="text-[10px] tracking-[0.24em] text-gold uppercase font-semibold">Preparación de Sesión</span>
+              <h3 class="font-serif text-2xl font-bold text-white mt-1">DRESS CODE</h3>
+            </div>
+            <i class="fa-solid fa-shirt text-gold text-2xl"></i>
+          </div>
+
+          <p class="text-xs text-gray-400 uppercase tracking-wider">
+            Para que tu sesión sea más cómoda y podamos obtener el mejor resultado, te pedimos considerar estas recomendaciones:
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-3.5 rounded-lg bg-black/50 border border-white/5">
+              <div class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white shrink-0 relative">
+                <i class="fa-solid fa-shirt"></i>
+                <span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-emerald-600 text-white text-[9px] flex items-center justify-center">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </div>
+              <div>
+                <h4 class="font-serif text-xs font-bold tracking-wider text-white uppercase">Usa ropa cómoda</h4>
+                <p class="text-xs text-gray-400 mt-1">Que permita dejar fácilmente al descubierto la zona que será tatuada.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-3.5 rounded-lg bg-black/50 border border-white/5">
+              <div class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white shrink-0 relative">
+                <i class="fa-solid fa-vest"></i>
+                <span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-rose-600 text-white text-[9px] flex items-center justify-center">
+                  <i class="fa-solid fa-xmark"></i>
+                </span>
+              </div>
+              <div>
+                <h4 class="font-serif text-xs font-bold tracking-wider text-white uppercase">Evita prendas nuevas o delicadas</h4>
+                <p class="text-xs text-gray-400 mt-1">Ya que durante el proceso podrían entrar en contacto con tinta, jabón u otros productos y mancharse.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-3.5 rounded-lg bg-black/50 border border-white/5">
+              <div class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center text-white shrink-0 relative">
+                <i class="fa-solid fa-shower"></i>
+                <span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-emerald-600 text-white text-[9px] flex items-center justify-center">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </div>
+              <div>
+                <h4 class="font-serif text-xs font-bold tracking-wider text-white uppercase">Asiste con una buena higiene personal</h4>
+                <p class="text-xs text-gray-400 mt-1">Llegar recién duchado o con un buen aseo previo ayuda a mantener un ambiente cómodo, limpio y agradable para todos durante una sesión que puede durar varias horas. Es un gesto de respeto y consideración que te agradeceremos mucho.</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-center font-serif text-[11px] tracking-[0.2em] text-gold uppercase pt-2 border-t border-white/10">
+            Tu comodidad también es parte de un buen tatuaje.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SISTEMA DE RESERVAS Y COTIZACIÓN INTERACTIVA ==================== -->
+  <section id="reservar" class="py-20 lg:py-28 bg-obsidian border-b border-white/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+        <span class="text-xs font-semibold tracking-[0.26em] text-gold uppercase">Agenda Online</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Reservar una Hora</h2>
+        <div class="gold-line w-44 mx-auto"></div>
+        <p class="text-gray-400 text-sm font-light">
+          Consulta los días y horarios disponibles en tiempo real. Al enviar tu solicitud quedará registrada en nuestra agenda y podrás confirmarla directamente por WhatsApp.
+        </p>
+      </div>
+
+      <div class="luxury-card p-6 sm:p-10 rounded-2xl">
+        <form id="bookingForm" class="space-y-6">
+
+          <!-- Fila 1: Datos Personales -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            <div>
+              <label class="block text-[11px] font-semibold tracking-[0.14em] uppercase text-gray-300 mb-2">
+                Nombre Completo *
+              </label>
+              <input type="text" id="bkName" required placeholder="Ej: Matías Valenzuela" class="studio-input w-full px-4 py-3 rounded-lg text-sm" />
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold tracking-[0.14em] uppercase text-gray-300 mb-2">
+                Teléfono / WhatsApp *
+              </label>
+              <input type="tel" id="bkPhone" required placeholder="+56 9 1234 5678" class="studio-input w-full px-4 py-3 rounded-lg text-sm" />
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold tracking-[0.14em] uppercase text-gray-300 mb-2">
+                Correo Electrónico *
+              </label>
+              <input type="email" id="bkEmail" required placeholder="cliente@correo.cl" class="studio-input w-full px-4 py-3 rounded-lg text-sm" />
+            </div>
+          </div>
+
+          <!-- Fila 2: Detalles del Tatuaje -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            <div>
+              <label class="block text-[11px] font-semibold tracking-[0.14em] uppercase text-gray-300 mb-2">
+                Estilo del Tatuaje *
+              </label>
+              <select id="bkStyle" required class="studio-input w-full px-4 py-3 rounded-lg text-sm">
+                <option value="Realismo Black & Grey">Realismo Black & Grey</option>
+                <option value="Espalda Completa / Gran Formato">Espalda Completa / Gran Formato</option>
+                <option value="Blackwork / Gótico">Blackwork / Gótico</option>
+                <option value="Color / Oriental">Color / Oriental</option>
+                <option value="Cobertura / Restauración">Cobertura / Restauración</option>
+                <option value="Negro Simple / Fine Line">Negro Simple / Fine Line</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold tracking-[0.14em] uppercase text-gray-300 mb-2">
+                Zona del Cuerpo *
+              </label>
+              <input type="text" id="bkZone" required placeholder="Ej: Antebrazo externo, Espalda, Pecho..." class="studio-input w-full px-4 py-3 rounded-lg text-sm" />
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold tracking-[0.14em] uppercase text-gray-300 mb-2">
+                Tamaño Aproximado (cm) *
+              </label>
+              <input type="text" id="bkSize" required placeholder="Ej: 18 x 12 cm" class="studio-input w-full px-4 py-3 rounded-lg text-sm" />
+            </div>
+          </div>
+
+          <!-- Alerta especial si es Cobertura / Restauración -->
+          <div class="p-4 rounded-lg bg-black/70 border border-gold/25 flex items-start gap-3">
+            <input type="checkbox" id="bkIsCoverup" class="mt-1 accent-[#C5A059] w-4 h-4 cursor-pointer" onchange="toggleCoverupAlert()" />
+            <label for="bkIsCoverup" class="text-xs text-gray-300 cursor-pointer leading-relaxed">
+              <strong class="text-gold">Es una cobertura (Cover-Up) o restauración de tatuaje antiguo.</strong>
+              <span id="coverupHint" class="block text-gray-400 mt-1">
+                Recuerda adjuntar abajo una foto con buena iluminación y distancia donde se aprecie bien la tonalidad y ubicación actual para evaluarlo.
+              </span>
+            </label>
+          </div>
+
+          <!-- Fila 3: Fecha y Bloque Horario Dinámico -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-[11px] font-semibold tracking-[0.14em] uppercase text-gray-300 mb-2">
+                Fecha Preferida *
+              </label>
+              <input type="date" id="bkDate" required class="studio-input w-full px-4 py-3 rounded-lg text-sm" onchange="updateAvailableTimeSlots()" />
+              <p id="dateAvailabilityMsg" class="text-[11px] text-gray-400 mt-1.5">
+                Lunes a Viernes (09:00–19:00) · Sábado (09:00–15:00) · Domingo Cerrado.
+              </p>
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold tracking-[0.14em] uppercase text-gray-300 mb-2">
+                Horario Disponible *
+              </label>
+              <select id="bkTime" required class="studio-input w-full px-4 py-3 rounded-lg text-sm">
+                <option value="">Selecciona primero una fecha...</option>
+              </select>
+              <p class="text-[11px] text-gold/80 mt-1.5">
+                * Los horarios bloqueados por el tatuador no aparecen disponibles.
+              </p>
+            </div>
+          </div>
+
+          <!-- Fila 4: Descripción + Subida de Foto de Referencia -->
+          <div class="grid grid-cols-1 sm:grid-cols-12 gap-5">
+            <div class="sm:col-span-7">
+              <label class="block text-[11px] font-semibold tracking-[0.14em] uppercase text-gray-300 mb-2">
+                Descripción Detallada de tu Idea *
+              </label>
+              <textarea id="bkDescription" rows="4" required placeholder="Cuéntanos los elementos que te gustaría incluir, si lo prefieres en sombras o color, y cualquier detalle importante..." class="studio-input w-full px-4 py-3 rounded-lg text-sm"></textarea>
+            </div>
+
+            <div class="sm:col-span-5">
+              <label class="block text-[11px] font-semibold tracking-[0.14em] uppercase text-gray-300 mb-2">
+                Fotografía de Referencia (Opcional)
+              </label>
+              <label class="flex flex-col items-center justify-center h-[116px] border-2 border-dashed border-white/15 hover:border-gold rounded-lg cursor-pointer bg-black/40 transition-colors p-3 text-center">
+                <i class="fa-solid fa-cloud-arrow-up text-gold text-xl mb-1.5"></i>
+                <span id="refFileLabel" class="text-xs text-gray-300">Subir imagen de referencia o tatuaje actual</span>
+                <span class="text-[10px] text-gray-500 mt-0.5">JPG, PNG o WEBP</span>
+                <input type="file" id="bkRefImage" accept="image/*" class="hidden" onchange="previewBookingRefImage(event)" />
+              </label>
+              <div id="refPreviewBox" class="hidden mt-2 flex items-center gap-2 bg-black p-2 rounded border border-white/10">
+                <img id="refPreviewImg" src="" alt="Vista previa" class="w-10 h-10 object-cover rounded" />
+                <span class="text-[11px] text-emerald-400 flex-1 truncate">Imagen lista para enviar</span>
+                <button type="button" onclick="clearBookingRefImage()" class="text-xs text-rose-400 hover:text-rose-300 px-1">Quitar</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nota de Abono -->
+          <div class="p-4 rounded-lg bg-gold/10 border border-gold/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle-info text-gold text-base"></i>
+              <span class="text-gray-200">
+                Para confirmar definitivamente tu cupo tras la evaluación se solicita un abono de <strong class="text-gold">$25.000 CLP</strong>.
+              </span>
+            </div>
+            <span class="text-[11px] text-gold font-semibold uppercase tracking-wider shrink-0">Sin cobro online automático</span>
+          </div>
+
+          <!-- Botón de Envío -->
+          <div class="pt-2">
+            <button type="submit" class="w-full py-4 rounded-lg bg-gold hover:bg-gold-light text-black font-bold text-xs sm:text-sm tracking-[0.2em] uppercase transition-all shadow-xl shadow-gold/15 flex items-center justify-center gap-3">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Enviar Solicitud de Reserva</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Comprobante Inmediato Post-Reserva -->
+        <div id="bookingSuccessCard" class="hidden mt-8 p-6 sm:p-8 rounded-xl bg-black border border-gold/50 text-center space-y-4 fade-in">
+          <div class="w-14 h-14 rounded-full bg-gold/15 border border-gold text-gold flex items-center justify-center mx-auto text-2xl">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-white">¡Solicitud Registrada en Agenda!</h3>
+          <p id="bookingSuccessSummary" class="text-sm text-gray-300 max-w-lg mx-auto leading-relaxed"></p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+            <a id="bookingWhatsappDirectLink" href="#" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs tracking-[0.15em] uppercase flex items-center justify-center gap-2 transition-colors">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span>Enviar Comprobante por WhatsApp</span>
+            </a>
+            <button type="button" onclick="resetBookingView()" class="w-full sm:w-auto px-6 py-3.5 rounded-lg border border-white/20 hover:border-gold text-gray-300 text-xs tracking-[0.15em] uppercase">
+              Solicitar Otra Hora
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CUIDADOS POSTERIORES AL TATUAJE ==================== -->
+  <section id="cuidados" class="py-20 bg-charcoal border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+        <span class="text-xs font-semibold tracking-[0.26em] text-gold uppercase">Post-Sesión</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Cuidados del Tatuaje</h2>
+        <div class="gold-line w-40 mx-auto"></div>
+        <p class="text-gray-400 text-sm font-light">
+          El 50% del resultado final depende de una correcta cicatrización. Sigue estas indicaciones clínicas.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="luxury-card p-6 rounded-xl space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold">
+            <i class="fa-solid fa-hand-sparkles"></i>
+          </div>
+          <h3 class="font-serif text-sm font-bold text-white uppercase">1. Lavado Suave</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Retira el parche según indicación del tatuador. Lava suavemente con agua tibia y jabón neutro sin perfume, secando con toalla de papel desechable a toques.
+          </p>
+        </div>
+
+        <div class="luxury-card p-6 rounded-xl space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <h3 class="font-serif text-sm font-bold text-white uppercase">2. Hidratación</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Aplica una capa muy delgada de crema regeneradora recomendada 2 a 3 veces al día. Evita saturar la piel para permitir que respire correctamente.
+          </p>
+        </div>
+
+        <div class="luxury-card p-6 rounded-xl space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <h3 class="font-serif text-sm font-bold text-white uppercase">3. Evita Sol y Agua</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Durante los primeros 20 días evita exposición directa al sol, piscinas, mar, saunas o baños prolongados que puedan ablandar la costra.
+          </p>
+        </div>
+
+        <div class="luxury-card p-6 rounded-xl space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold">
+            <i class="fa-solid fa-ban"></i>
+          </div>
+          <h3 class="font-serif text-sm font-bold text-white uppercase">4. No Rascar</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Es normal sentir picazón durante la descamación. Nunca arranques pieles ni rasques la zona para conservar intacto el pigmento y las sombras.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== UBICACIÓN, MAPA Y CONTACTO ==================== -->
+  <section id="contacto" class="py-20 lg:py-28 bg-obsidian">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+
+        <!-- Información Oficial de Contacto -->
+        <div class="lg:col-span-5 luxury-card p-7 sm:p-9 rounded-2xl flex flex-col justify-between space-y-8">
+          <div class="space-y-4">
+            <span class="text-xs font-semibold tracking-[0.26em] text-gold uppercase">Encuéntranos</span>
+            <h2 class="font-serif text-3xl font-bold text-white">Ubicación y Contacto</h2>
+            <div class="w-16 h-[2px] bg-gold"></div>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              Atendemos en nuestro estudio privado en Llolleo, San Antonio. Escríbenos directamente por WhatsApp o Instagram para resolver tus dudas.
+            </p>
+          </div>
+
+          <div class="space-y-5 text-sm">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h3 class="font-serif text-xs font-bold tracking-wider text-white uppercase">Dirección Oficial</h3>
+                <p class="text-gray-300 mt-0.5">Avenida Chile 378, Llolleo, San Antonio, Chile</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0">
+                <i class="fa-brands fa-whatsapp text-base"></i>
+              </div>
+              <div>
+                <h3 class="font-serif text-xs font-bold tracking-wider text-white uppercase">WhatsApp Comercial</h3>
+                <a href="https://wa.me/56937822387" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline mt-0.5 inline-block font-medium">
+                  +56 9 3782 2387
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div>
+                <h3 class="font-serif text-xs font-bold tracking-wider text-white uppercase">Horarios de Atención</h3>
+                <ul class="text-xs text-gray-300 mt-1 space-y-1">
+                  <li><span class="text-gray-400">Lunes a Viernes:</span> 09:00 – 19:00 hrs</li>
+                  <li><span class="text-gray-400">Sábado:</span> 09:00 – 15:00 hrs</li>
+                  <li><span class="text-gray-400">Domingo:</span> <span class="text-rose-400">Cerrado</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div>
+                <h3 class="font-serif text-xs font-bold tracking-wider text-white uppercase">Redes Sociales Oficiales</h3>
+                <div class="flex flex-wrap gap-3 mt-1.5 text-xs">
+                  <a href="https://www.instagram.com/rinotattoostudio?utm_source=ig_web_button_share_sheet&knvt=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-black border border-white/15 hover:border-gold text-gray-200 hover:text-gold transition-colors">
+                    <i class="fa-brands fa-instagram mr-1"></i> Instagram
+                  </a>
+                  <a href="https://web.facebook.com/RINOTATTOOS?_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-black border border-white/15 hover:border-gold text-gray-200 hover:text-gold transition-colors">
+                    <i class="fa-brands fa-facebook mr-1"></i> Facebook
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Avenida+Chile+378+Llolleo+San+Antonio+Chile"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full py-3.5 rounded-lg bg-gold hover:bg-gold-light text-black font-bold text-xs tracking-[0.18em] uppercase text-center transition-all flex items-center justify-center gap-2"
+          >
+            <i class="fa-solid fa-diamond-turn-right"></i>
+            <span>Cómo Llegar en Google Maps</span>
+          </a>
+        </div>
+
+        <!-- Mapa Interactivo de Avenida Chile 378, Llolleo -->
+        <div class="lg:col-span-7 rounded-2xl overflow-hidden border border-white/15 min-h-[380px] relative bg-charcoal">
+          <iframe
+            title="Ubicación Rino Tattoo Studio - Avenida Chile 378, Llolleo, San Antonio"
+            src="https://maps.google.com/maps?q=Avenida%20Chile%20378,%20Llolleo,%20San%20Antonio,%20Chile&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-full min-h-[380px] border-0 grayscale invert contrast-125 opacity-90"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-black border-t border-white/10 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3.5">
+        <div class="official-logo-wrapper w-11 h-11 border border-gold/40">
+          <img src="./assets/logo-rino.jpg" alt="Logo Rino Tattoo Studio" class="official-logo-img js-official-logo" onerror="handleLogoFallback(this)" />
+        </div>
+        <div>
+          <span class="block font-serif font-bold text-sm tracking-[0.2em] text-white">RINO TATTOO STUDIO</span>
+          <span class="block text-[10px] text-gray-500 tracking-widest uppercase">Arte que queda para siempre · Autorizado SEREMI de Salud</span>
+        </div>
+      </div>
+
+      <p class="text-xs text-gray-500 text-center">
+        © <span id="currentYear"></span> Rino Tattoo Studio · Av. Chile 378, Llolleo, San Antonio, Chile.
+      </p>
+
+      <button onclick="openAdminModal()" class="text-xs text-gray-500 hover:text-gold transition-colors flex items-center gap-1.5">
+        <i class="fa-solid fa-lock text-[10px]"></i>
+        <span>Área Privada Tatuador</span>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ==================== BOTÓN FLOTANTE WHATSAPP ==================== -->
+  <a
+    href="https://wa.me/56937822387?text=Hola%20Rino%20Tattoo%20Studio,%20me%20gustar%C3%ADa%20cotizar%20un%20tatuaje"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+    class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center text-2xl shadow-2xl shadow-black border border-white/20 transition-transform hover:scale-105"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ==================== LIGHTBOX MODAL (AMPLIAR TATUAJE) ==================== -->
+  <div id="lightboxModal" class="fixed inset-0 z-[90] hidden bg-black/95 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="max-w-4xl w-full bg-charcoal border border-white/15 rounded-2xl overflow-hidden shadow-2xl relative fade-in">
+      <button onclick="closeLightbox()" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/80 hover:bg-gold text-white hover:text-black border border-white/20 flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-12">
+        <div class="md:col-span-7 bg-black flex items-center justify-center min-h-[320px] max-h-[75vh] overflow-hidden">
+          <img id="lbImage" src="" alt="Detalle de tatuaje" class="w-full h-full object-contain" />
+        </div>
+        <div class="md:col-span-5 p-6 sm:p-8 flex flex-col justify-between space-y-6">
+          <div class="space-y-3">
+            <span id="lbCategory" class="inline-block px-3 py-1 rounded bg-gold/15 border border-gold/40 text-gold text-[10px] font-bold tracking-[0.18em] uppercase"></span>
+            <h3 id="lbTitle" class="font-serif text-2xl font-bold text-white"></h3>
+            <p id="lbDescription" class="text-xs sm:text-sm text-gray-300 leading-relaxed"></p>
+            <div class="pt-3 border-t border-white/10 space-y-1.5 text-xs text-gray-400">
+              <p><strong class="text-white">Artista:</strong> Mario · Rino Tattoo Studio</p>
+              <p><strong class="text-white">Zona:</strong> <span id="lbZone"></span></p>
+            </div>
+          </div>
+
+          <div class="space-y-2.5">
+            <button onclick="quoteSimilarFromLightbox()" class="w-full py-3.5 rounded-lg bg-gold hover:bg-gold-light text-black font-bold text-xs tracking-[0.16em] uppercase transition-colors">
+              Cotizar un Estilo Similar
+            </button>
+            <button onclick="closeLightbox()" class="w-full py-2.5 rounded-lg border border-white/15 text-gray-400 hover:text-white text-xs tracking-wider uppercase">
+              Cerrar Vista
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL DE LOGIN Y PANEL PRIVADO DE ADMINISTRACIÓN (MARIO) ==================== -->
+  <div id="adminModal" class="fixed inset-0 z-[100] hidden bg-black/95 backdrop-blur-lg overflow-y-auto">
+    <div class="min-h-screen flex items-center justify-center p-3 sm:p-6">
+
+      <!-- VISTA 1: FORMULARIO DE ACCESO PRIVADO -->
+      <div id="adminLoginView" class="w-full max-w-md luxury-card p-8 rounded-2xl border border-gold/30 space-y-6 fade-in">
+        <div class="text-center space-y-3">
+          <div class="official-logo-wrapper w-20 h-20 mx-auto border border-gold/50">
+            <img src="./assets/logo-rino.jpg" alt="Logo Rino Tattoo" class="official-logo-img js-official-logo" onerror="handleLogoFallback(this)" />
+          </div>
+          <span class="text-[10px] font-bold tracking-[0.26em] text-gold uppercase block">Área Privada del Estudio</span>
+          <h2 class="font-serif text-2xl font-bold text-white">Acceso Tatuador</h2>
+          <p class="text-xs text-gray-400">Ingresa tus credenciales para gestionar reservas, calendario, galería y pagos.</p>
+        </div>
+
+        <form id="adminLoginForm" class="space-y-4">
+          <div>
+            <label class="block text-[11px] font-semibold tracking-wider uppercase text-gray-300 mb-1.5">Usuario</label>
+            <input type="text" id="adminUserInput" required placeholder="mario" class="studio-input w-full px-4 py-3 rounded-lg text-sm" />
+          </div>
+          <div>
+            <label class="block text-[11px] font-semibold tracking-wider uppercase text-gray-300 mb-1.5">Contraseña</label>
+            <input type="password" id="adminPassInput" required placeholder="••••••••" class="studio-input w-full px-4 py-3 rounded-lg text-sm" />
+          </div>
+
+          <div class="p-3 rounded bg-white/[0.03] border border-white/10 text-[11px] text-gray-400 flex items-center justify-between">
+            <span>Credenciales iniciales:</span>
+            <code class="text-gold">mario / rino2026</code>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-lg bg-gold hover:bg-gold-light text-black font-bold text-xs tracking-[0.18em] uppercase transition-all">
+            Ingresar al Panel
+          </button>
+        </form>
+
+        <button onclick="closeAdminModal()" class="w-full py-2 text-xs text-gray-400 hover:text-white tracking-wider uppercase">
+          ← Volver a la Página Pública
+        </button>
+      </div>
+
+      <!-- VISTA 2: PANEL DE CONTROL COMPLETO DE MARIO -->
+      <div id="adminDashboardView" class="hidden w-full max-w-7xl bg-charcoal border border-white/15 rounded-2xl shadow-2xl overflow-hidden fade-in my-4">
+
+        <!-- Cabecera del Panel -->
+        <div class="bg-black px-5 sm:px-8 py-4 border-b border-white/10 flex flex-wrap items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <div class="official-logo-wrapper w-10 h-10 border border-gold">
+              <img src="./assets/logo-rino.jpg" alt="Rino Tattoo" class="official-logo-img js-official-logo" onerror="handleLogoFallback(this)" />
+            </div>
+            <div>
+              <h2 class="font-serif text-base sm:text-lg font-bold text-white tracking-wider">PANEL DE ADMINISTRACIÓN · RINO TATTOO</h2>
+              <span class="text-[11px] text-gold">Bienvenido, Mario · Gestión Integral del Estudio</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2.5">
+            <button onclick="logoutAdmin()" class="px-3.5 py-2 rounded border border-rose-500/40 text-rose-400 hover:bg-rose-500/10 text-[11px] uppercase tracking-wider">
+              Cerrar Sesión
+            </button>
+            <button onclick="closeAdminModal()" class="px-4 py-2 rounded bg-white/10 hover:bg-gold text-white hover:text-black font-semibold text-[11px] uppercase tracking-wider transition-colors">
+              Ver Web Pública
+            </button>
+          </div>
+        </div>
+
+        <!-- Navegación de Pestañas del Panel -->
+        <div class="bg-obsidian px-4 sm:px-8 py-3 border-b border-white/10 flex overflow-x-auto gap-2">
+          <button onclick="switchAdminTab('resumen')" data-tab="resumen" class="admin-tab-btn px-4 py-2 rounded text-xs font-semibold uppercase tracking-wider bg-gold text-black shrink-0">
+            <i class="fa-solid fa-chart-pie mr-1.5"></i>Resumen
+          </button>
+          <button onclick="switchAdminTab('reservas')" data-tab="reservas" class="admin-tab-btn px-4 py-2 rounded text-xs font-medium uppercase tracking-wider bg-charcoal text-gray-300 hover:text-gold shrink-0">
+            <i class="fa-solid fa-calendar-days mr-1.5"></i>Reservas y Clientes
+          </button>
+          <button onclick="switchAdminTab('disponibilidad')" data-tab="disponibilidad" class="admin-tab-btn px-4 py-2 rounded text-xs font-medium uppercase tracking-wider bg-charcoal text-gray-300 hover:text-gold shrink-0">
+            <i class="fa-solid fa-clock mr-1.5"></i>Calendario y Disponibilidad
+          </button>
+          <button onclick="switchAdminTab('pagos')" data-tab="pagos" class="admin-tab-btn px-4 py-2 rounded text-xs font-medium uppercase tracking-wider bg-charcoal text-gray-300 hover:text-gold shrink-0">
+            <i class="fa-solid fa-sack-dollar mr-1.5"></i>Pagos y Anticipos
+          </button>
+          <button onclick="switchAdminTab('galeriaAdmin')" data-tab="galeriaAdmin" class="admin-tab-btn px-4 py-2 rounded text-xs font-medium uppercase tracking-wider bg-charcoal text-gray-300 hover:text-gold shrink-0">
+            <i class="fa-solid fa-images mr-1.5"></i>Galería de Fotos
+          </button>
+          <button onclick="switchAdminTab('ajustes')" data-tab="ajustes" class="admin-tab-btn px-4 py-2 rounded text-xs font-medium uppercase tracking-wider bg-charcoal text-gray-300 hover:text-gold shrink-0">
+            <i class="fa-solid fa-gear mr-1.5"></i>Logo y Respaldo
+          </button>
+        </div>
+
+        <!-- Contenido Dinámico de Pestañas -->
+        <div class="p-5 sm:p-8 max-h-[76vh] overflow-y-auto">
+
+          <!-- TAB 1: RESUMEN EJECUTIVO -->
+          <div id="tab-resumen" class="admin-tab-content space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="p-5 rounded-xl bg-black border border-white/10">
+                <span class="text-[11px] text-gray-400 uppercase tracking-wider">Solicitudes Pendientes</span>
+                <p id="kpiPending" class="font-serif text-3xl font-bold text-amber-400 mt-2">0</p>
+              </div>
+              <div class="p-5 rounded-xl bg-black border border-white/10">
+                <span class="text-[11px] text-gray-400 uppercase tracking-wider">Sesiones Confirmadas</span>
+                <p id="kpiConfirmed" class="font-serif text-3xl font-bold text-emerald-400 mt-2">0</p>
+              </div>
+              <div class="p-5 rounded-xl bg-black border border-white/10">
+                <span class="text-[11px] text-gray-400 uppercase tracking-wider">Total Recaudado (CLP)</span>
+                <p id="kpiPaidTotal" class="font-serif text-3xl font-bold text-gold mt-2">$0</p>
+              </div>
+              <div class="p-5 rounded-xl bg-black border border-white/10">
+                <span class="text-[11px] text-gray-400 uppercase tracking-wider">Saldos por Cobrar (CLP)</span>
+                <p id="kpiBalanceTotal" class="font-serif text-3xl font-bold text-white mt-2">$0</p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-xl bg-black/70 border border-white/10 space-y-4">
+              <h3 class="font-serif text-lg font-bold text-white">Próximas Sesiones Agendadas</h3>
+              <div id="summaryUpcomingList" class="space-y-3"></div>
+            </div>
+          </div>
+
+          <!-- TAB 2: RESERVAS Y CLIENTES -->
+          <div id="tab-reservas" class="admin-tab-content hidden space-y-5">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <h3 class="font-serif text-xl font-bold text-white">Gestión de Solicitudes y Clientes</h3>
+              <button onclick="openNewManualBookingForm()" class="px-4 py-2 rounded bg-gold text-black font-bold text-xs uppercase tracking-wider">
+                + Nueva Reserva Manual
+              </button>
+            </div>
+
+            <!-- Formulario rápido para agregar cita presencial/Instagram -->
+            <div id="manualBookingBox" class="hidden p-5 rounded-xl bg-black border border-gold/40 space-y-4">
+              <h4 class="font-serif text-sm font-bold text-gold uppercase">Registrar Cita Manual (Instagram / WhatsApp)</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <input type="text" id="mName" placeholder="Nombre cliente" class="studio-input px-3 py-2 rounded text-xs" />
+                <input type="text" id="mPhone" placeholder="Teléfono (+569...)" class="studio-input px-3 py-2 rounded text-xs" />
+                <input type="text" id="mStyle" placeholder="Estilo / Idea" class="studio-input px-3 py-2 rounded text-xs" />
+                <input type="text" id="mZone" placeholder="Zona y cm" class="studio-input px-3 py-2 rounded text-xs" />
+                <input type="date" id="mDate" class="studio-input px-3 py-2 rounded text-xs" />
+                <input type="time" id="mTime" value="11:00" class="studio-input px-3 py-2 rounded text-xs" />
+              </div>
+              <div class="flex gap-2">
+                <button onclick="saveManualBooking()" class="px-4 py-2 rounded bg-gold text-black font-bold text-xs uppercase">Guardar Cita</button>
+                <button onclick="document.getElementById('manualBookingBox').classList.add('hidden')" class="px-4 py-2 rounded border border-white/20 text-xs uppercase">Cancelar</button>
+              </div>
+            </div>
+
+            <div id="adminBookingsList" class="space-y-4"></div>
+          </div>
+
+          <!-- TAB 3: CALENDARIO Y DISPONIBILIDAD EDITABLE -->
+          <div id="tab-disponibilidad" class="admin-tab-content hidden space-y-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <!-- Bloquear Día Completo -->
+              <div class="p-6 rounded-xl bg-black border border-white/10 space-y-4">
+                <h3 class="font-serif text-lg font-bold text-white">Bloquear Días Completos</h3>
+                <p class="text-xs text-gray-400">Marca días libres, convenciones o jornadas no disponibles. Los clientes no podrán seleccionar estas fechas.</p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                  <input type="date" id="blockDateInput" class="studio-input px-4 py-2.5 rounded-lg text-sm flex-1" />
+                  <input type="text" id="blockReasonInput" placeholder="Motivo (ej: Día libre)" class="studio-input px-4 py-2.5 rounded-lg text-sm flex-1" />
+                  <button onclick="addBlockedDate()" class="px-5 py-2.5 rounded-lg bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs uppercase tracking-wider">
+                    Bloquear Día
+                  </button>
+                </div>
+                <div id="blockedDatesList" class="space-y-2 pt-2"></div>
+              </div>
+
+              <!-- Configurar Bloques Horarios del Estudio -->
+              <div class="p-6 rounded-xl bg-black border border-white/10 space-y-4">
+                <h3 class="font-serif text-lg font-bold text-white">Bloques Horarios Activos</h3>
+                <p class="text-xs text-gray-400">Activa o desactiva los bloques horarios disponibles para reservas online.</p>
+                <div id="timeSlotsConfigList" class="grid grid-cols-2 sm:grid-cols-3 gap-2.5"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 4: PAGOS Y ANTICIPOS -->
+          <div id="tab-pagos" class="admin-tab-content hidden space-y-5">
+            <div>
+              <h3 class="font-serif text-xl font-bold text-white">Control de Anticipos ($25.000 CLP) y Saldos</h3>
+              <p class="text-xs text-gray-400 mt-1">Registra el valor cotizado de cada sesión, los abonos recibidos y calcula automáticamente el saldo pendiente.</p>
+            </div>
+            <div id="adminPaymentsList" class="space-y-4"></div>
+          </div>
+
+          <!-- TAB 5: ADMINISTRADOR DE GALERÍA -->
+          <div id="tab-galeriaAdmin" class="admin-tab-content hidden space-y-6">
+            <div class="p-6 rounded-xl bg-black border border-gold/30 space-y-4">
+              <h3 class="font-serif text-lg font-bold text-white">Subir Nuevo Tatuaje a la Galería Pública</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
+                <input type="text" id="newArtTitle" placeholder="Título (Ej: León Realismo)" class="studio-input px-3.5 py-2.5 rounded-lg text-xs" />
+                <select id="newArtCategory" class="studio-input px-3.5 py-2.5 rounded-lg text-xs">
+                  <option value="Realismo Black & Grey">Realismo Black & Grey</option>
+                  <option value="Espalda Completa">Espalda Completa</option>
+                  <option value="Brazo y Manga">Brazo y Manga</option>
+                  <option value="Color y Oriental">Color y Oriental</option>
+                </select>
+                <input type="text" id="newArtZone" placeholder="Zona (Ej: Antebrazo)" class="studio-input px-3.5 py-2.5 rounded-lg text-xs" />
+                <label class="cursor-pointer px-4 py-2.5 rounded-lg bg-gold hover:bg-gold-light text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-upload"></i>
+                  <span>Elegir Foto</span>
+                  <input type="file" accept="image/*" class="hidden" onchange="addSingleGalleryPhoto(event)" />
+                </label>
+              </div>
+            </div>
+
+            <div id="adminGalleryList" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4"></div>
+          </div>
+
+          <!-- TAB 6: LOGO OFICIAL, CONTRASEÑA Y RESPALDO -->
+          <div id="tab-ajustes" class="admin-tab-content hidden space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="p-6 rounded-xl bg-black border border-white/10 space-y-4">
+                <h3 class="font-serif text-lg font-bold text-white">Actualizar Imagen del Logo Oficial</h3>
+                <p class="text-xs text-gray-400">
+                  Si aún no has guardado <code class="text-gold">assets/logo-rino.jpg</code> en la carpeta del proyecto, selecciona aquí la imagen del emblema circular negro y blanco; se recortará automáticamente sin bordes blancos.
+                </p>
+                <label class="cursor-pointer inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-gold text-black font-bold text-xs uppercase tracking-wider">
+                  <i class="fa-solid fa-image"></i>
+                  <span>Seleccionar Imagen del Logo</span>
+                  <input type="file" accept="image/*" class="hidden" onchange="uploadOfficialLogoFile(event)" />
+                </label>
+              </div>
+
+              <div class="p-6 rounded-xl bg-black border border-white/10 space-y-4">
+                <h3 class="font-serif text-lg font-bold text-white">Seguridad y Respaldo de Datos</h3>
+                <div class="flex gap-2">
+                  <input type="password" id="newAdminPassInput" placeholder="Nueva contraseña para Mario" class="studio-input px-3.5 py-2.5 rounded-lg text-xs flex-1" />
+                  <button onclick="updateAdminPassword()" class="px-4 py-2.5 rounded-lg bg-white/10 hover:bg-gold text-white hover:text-black font-bold text-xs uppercase">
+                    Cambiar
+                  </button>
+                </div>
+                <div class="pt-2 flex flex-wrap gap-3">
+                  <button onclick="exportStudioBackup()" class="px-4 py-2.5 rounded-lg border border-gold/40 text-gold text-xs uppercase tracking-wider hover:bg-gold/10">
+                    <i class="fa-solid fa-download mr-1.5"></i>Descargar Respaldo JSON
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT: LÓGICA COMPLETA DEL ESTUDIO ==================== -->
+  <script>
+    // =========================================================================
+    // 1. ESTADO INICIAL Y CATÁLOGO REAL EXTRAÍDO DEL DOCUMENTO DE RINO TATTOO
+    // =========================================================================
+    const STORAGE_KEYS = {
+      LOGO: 'rino_studio_official_logo_v1',
+      GALLERY: 'rino_studio_gallery_v1',
+      BOOKINGS: 'rino_studio_bookings_v1',
+      BLOCKED_DATES: 'rino_studio_blocked_dates_v1',
+      TIME_SLOTS: 'rino_studio_time_slots_v1',
+      ADMIN_AUTH: 'rino_studio_admin_credentials_v1',
+      ADMIN_SESSION: 'rino_studio_admin_logged_in'
+    };
+
+    // Las 17 obras reales fotografiadas en el documento Word de Rino Tattoo Studio
+    const DEFAULT_GALLERY_ITEMS = [
+      {
+        id: 't1',
+        title: 'Íconos del Cine de Terror',
+        category: 'Espalda Completa',
+        zone: 'Espalda Completa',
+        src: './assets/galeria/tatuaje-01.jpg',
+        description: 'Composición realista en sombras de Pennywise, Freddy Krueger, Jason Voorhees y Michael Myers con la casa de Halloween.'
+      },
+      {
+        id: 't2',
+        title: 'Valquirias, León y Templo Clásico',
+        category: 'Espalda Completa',
+        zone: 'Espalda Completa',
+        src: './assets/galeria/tatuaje-02.jpg',
+        description: 'Guerreras aladas frente a frente escoltadas por león, búho, espada central y columnata griega en black & grey.'
+      },
+      {
+        id: 't3',
+        title: 'Ganesha Oriental Full Back',
+        category: 'Color y Oriental',
+        zone: 'Espalda Completa',
+        src: './assets/galeria/tatuaje-03.jpg',
+        description: 'Deidad Ganesha en tonos esmeralda, oro y carmesí con flor de loto y base geométrica tradicional.'
+      },
+      {
+        id: 't4',
+        title: 'Cráneo Oscuro Fragmentado',
+        category: 'Espalda Completa',
+        zone: 'Espalda Completa',
+        src: './assets/galeria/tatuaje-04.jpg',
+        description: 'Cráneo hiperrealista de gran escala con grietas orgánicas y negros profundos de alto impacto.'
+      },
+      {
+        id: 't5',
+        title: 'Tigre Rugiendo Realismo',
+        category: 'Espalda Completa',
+        zone: 'Espalda Completa',
+        src: './assets/galeria/tatuaje-05.jpg',
+        description: 'Rostro frontal de tigre con textura detallada de pelaje y expresión feroz en sombras.'
+      },
+      {
+        id: 't6',
+        title: 'Ojo del Tiempo, Palomas y Rosa',
+        category: 'Brazo y Manga',
+        zone: 'Antebrazo',
+        src: './assets/galeria/tatuaje-06.jpg',
+        description: 'Reloj romano fragmentado, mirada realista, dos palomas en vuelo y rosa en black & grey.'
+      },
+      {
+        id: 't7',
+        title: 'León y Casco Espartano',
+        category: 'Realismo Black & Grey',
+        zone: 'Pecho / Hombro',
+        src: './assets/galeria/tatuaje-07.jpg',
+        description: 'León rugiendo junto a yelmo espartano con grecas helénicas en alto contraste.'
+      },
+      {
+        id: 't8',
+        title: 'Águila de Ojos Azules y Reloj Romano',
+        category: 'Realismo Black & Grey',
+        zone: 'Hombro / Brazo',
+        src: './assets/galeria/tatuaje-08.jpg',
+        description: 'Águila realista con destello azul en la mirada, reloj romano y guarda geométrica inferior.'
+      },
+      {
+        id: 't9',
+        title: 'Águila y Faro en Acantilado',
+        category: 'Brazo y Manga',
+        zone: 'Antebrazo',
+        src: './assets/galeria/tatuaje-09.jpg',
+        description: 'Composición costera con águila en primer plano, ave en vuelo y faro iluminado sobre rocas.'
+      },
+      {
+        id: 't10',
+        title: 'Retrato Geisha y Flor de Cerezo',
+        category: 'Realismo Black & Grey',
+        zone: 'Antebrazo',
+        src: './assets/galeria/tatuaje-10.jpg',
+        description: 'Retrato femenino en sombras suaves adornado con flores de cerezo y lettering caligráfico.'
+      },
+      {
+        id: 't11',
+        title: 'Tony Montana & Las Vegas',
+        category: 'Realismo Black & Grey',
+        zone: 'Pecho Completo',
+        src: './assets/galeria/tatuaje-11.jpg',
+        description: 'Retrato cinematográfico de Scarface con billetes, máscara y letrero clásico de Las Vegas.'
+      },
+      {
+        id: 't12',
+        title: 'Joker "HAHA" Realismo Oscuro',
+        category: 'Brazo y Manga',
+        zone: 'Brazo Superior',
+        src: './assets/galeria/tatuaje-12.jpg',
+        description: 'Retrato expresivo del Joker con sonrisa metálica y tipografía gestual alrededor.'
+      },
+      {
+        id: 't13',
+        title: 'Manga Oriental Pez Koi y Loto',
+        category: 'Color y Oriental',
+        zone: 'Manga Completa y Mano',
+        src: './assets/galeria/tatuaje-13.jpg',
+        description: 'Manga japonesa completa con pez Koi rojo intenso, flores de loto turquesa y tigre en la mano.'
+      },
+      {
+        id: 't14',
+        title: 'Ojo Reloj, Cráneo y Rosa',
+        category: 'Brazo y Manga',
+        zone: 'Antebrazo',
+        src: './assets/galeria/tatuaje-14.jpg',
+        description: 'Composición vertical en sombras integrando iris con números romanos, calavera y rosa.'
+      },
+      {
+        id: 't15',
+        title: 'Poseidón y Tridente',
+        category: 'Realismo Black & Grey',
+        zone: 'Pierna / Gemelo',
+        src: './assets/galeria/tatuaje-15.jpg',
+        description: 'Escultura de Poseidón con tridente dorado sutil y corcel marino en sombreado realista.'
+      },
+      {
+        id: 't16',
+        title: 'Manga Religiosa Manos en Oración',
+        category: 'Brazo y Manga',
+        zone: 'Manga Completa',
+        src: './assets/galeria/tatuaje-16.jpg',
+        description: 'Paloma del Espíritu Santo, manos con rosario, Sagrado Corazón y querubines con vela.'
+      },
+      {
+        id: 't17',
+        title: 'Cristo con Corona de Espinas y Rosa',
+        category: 'Realismo Black & Grey',
+        zone: 'Hombro / Brazo',
+        src: './assets/galeria/tatuaje-17.jpg',
+        description: 'Retrato realista de Cristo mirando al cielo acompañado de una rosa en blanco y negro.'
+      }
+    ];
+
+    const DEFAULT_TIME_SLOTS = [
+      { time: '09:30', active: true },
+      { time: '11:30', active: true },
+      { time: '14:30', active: true },
+      { time: '16:30', active: true },
+      { time: '18:00', active: true }
+    ];
+
+    // =========================================================================
+    // 2. UTILIDADES DE ALMACENAMIENTO Y NOTIFICACIONES
+    // =========================================================================
+    function getStorage(key, fallback) {
+      try {
+        const raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : fallback;
+      } catch (e) {
+        return fallback;
+      }
+    }
+
+    function setStorage(key, value) {
+      try {
+        localStorage.setItem(key, JSON.stringify(value));
+      } catch (e) {
+        showToast('Aviso: Almacenamiento local lleno. Usa imágenes más livianas.', 'error');
+      }
+    }
+
+    function formatCLP(amount) {
+      return '$' + Number(amount || 0).toLocaleString('es-CL');
+    }
+
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      const borderColor = type === 'error' ? 'border-rose-500 text-rose-200' : 'border-gold text-white';
+      const icon = type === 'error' ? 'fa-circle-exclamation text-rose-400' : 'fa-circle-check text-gold';
+
+      toast.className = `pointer-events-auto bg-charcoal/95 backdrop-blur-md border ${borderColor} px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 text-xs fade-in`;
+      toast.innerHTML = `<i class="fa-solid ${icon} text-base"></i><span>${message}</span>`;
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(-6px)';
+        toast.style.transition = 'all 0.3s ease';
+        setTimeout(() => toast.remove(), 300);
+      }, 3800);
+    }
+
+    // =========================================================================
+    // 3. GESTIÓN DEL LOGO OFICIAL SIN FONDO BLANCO
+    // =========================================================================
+    function applySavedLogoIfExists() {
+      const savedLogoData = localStorage.getItem(STORAGE_KEYS.LOGO);
+      if (savedLogoData) {
+        document.querySelectorAll('.js-official-logo').forEach(img => {
+          img.src = savedLogoData;
+        });
+        const helper = document.getElementById('logoUploadHelper');
+        if (helper) helper.classList.add('hidden');
+      }
+    }
+
+    // Si aún no existe ./assets/logo-rino.jpg en el directorio local, dibuja un emblema limpio sobre negro puro y muestra el botón para cargarlo
+    function handleLogoFallback(imgEl) {
+      if (imgEl.dataset.fallbackApplied) return;
+      imgEl.dataset.fallbackApplied = 'true';
+
+      const svgFallback = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+          <defs>
+            <path id="arcText" d="M 78,248 A 130,130 0 0,0 322,248" />
+          </defs>
+          <circle cx="200" cy="200" r="196" fill="#000000"/>
+          <circle cx="200" cy="200" r="168" fill="none" stroke="#ffffff" stroke-width="2"/>
+          <circle cx="200" cy="200" r="144" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+          <line x1="200" y1="26" x2="200" y2="374" stroke="#ffffff" stroke-width="2"/>
+          <path d="M 122,98 C 122,78 172,70 200,56 C 228,70 278,78 278,98 L 278,236 C 278,292 232,330 200,344 C 168,330 122,292 122,236 Z" fill="#050505" stroke="#ffffff" stroke-width="3.5"/>
+          <text x="200" y="246" text-anchor="middle" fill="#ffffff" font-family="Georgia, serif" font-weight="bold" font-size="165">R</text>
+          <path d="M 68,230 A 136,136 0 0,0 332,230 L 315,222 A 118,118 0 0,1 85,222 Z" fill="#000000" stroke="#ffffff" stroke-width="2"/>
+          <text fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="13.5" letter-spacing="5">
+            <textPath href="#arcText" startOffset="50%" text-anchor="middle">• RINO TATTOO STUDIO •</textPath>
+          </text>
+        </svg>
+      `;
+      imgEl.src = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svgFallback);
+      imgEl.style.transform = 'scale(1.0)';
+    }
+
+    // Procesa cualquier imagen del logo subida por el usuario, recortando el círculo central sobre negro puro
+    function uploadOfficialLogoFile(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const img = new Image();
+        img.onload = function() {
+          const canvas = document.createElement('canvas');
+          const size = 600;
+          canvas.width = size;
+          canvas.height = size;
+          const ctx = canvas.getContext('2d');
+
+          // Fondo negro puro
+          ctx.fillStyle = '#000000';
+          ctx.fillRect(0, 0, size, size);
+
+          // Recorte circular centrado para eliminar márgenes blancos externos
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(size / 2, size / 2, size * 0.48, 0, Math.PI * 2);
+          ctx.closePath();
+          ctx.clip();
+
+          // Detectar si es captura vertical de teléfono (aspect ratio alto) y centrar en el emblema
+          const aspect = img.height / img.width;
+          if (aspect > 1.3) {
+            const cropSize = img.width * 0.86;
+            const sx = (img.width - cropSize) / 2;
+            const sy = (img.height - cropSize) * 0.51;
+            ctx.drawImage(img, sx, sy, cropSize, cropSize, 0, 0, size, size);
+          } else {
+            const minDim = Math.min(img.width, img.height);
+            const sx = (img.width - minDim) / 2;
+            const sy = (img.height - minDim) / 2;
+            ctx.drawImage(img, sx, sy, minDim, minDim, 0, 0, size, size);
+          }
+          ctx.restore();
+
+          const processedDataUrl = canvas.toDataURL('image/jpeg', 0.92);
+          localStorage.setItem(STORAGE_KEYS.LOGO, processedDataUrl);
+
+          document.querySelectorAll('.js-official-logo').forEach(el => {
+            el.dataset.fallbackApplied = '';
+            el.style.transform = 'scale(1.04)';
+            el.src = processedDataUrl;
+          });
+
+          const helper = document.getElementById('logoUploadHelper');
+          if (helper) helper.classList.add('hidden');
+          showToast('Logo oficial de Rino Tattoo Studio integrado sin fondo blanco.');
+        };
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    // =========================================================================
+    // 4. GALERÍA DE TRABAJOS + LIGHTBOX + CARGA DE FOTOS
+    // =========================================================================
+    let currentGalleryFilter = 'todos';
+    let currentLightboxItem = null;
+
+    function getGalleryItems() {
+      return getStorage(STORAGE_KEYS.GALLERY, DEFAULT_GALLERY_ITEMS);
+    }
+
+    function renderGallery() {
+      const items = getGalleryItems();
+      const grid = document.getElementById('galleryGrid');
+      const countEl = document.getElementById('countTodos');
+      if (countEl) countEl.textContent = items.length;
+
+      const filtered = currentGalleryFilter === 'todos'
+        ? items
+        : items.filter(item => item.category === currentGalleryFilter);
+
+      grid.innerHTML = '';
+
+      filtered.forEach(item => {
+        const card = document.createElement('article');
+        card.className = 'group luxury-card rounded-xl overflow-hidden cursor-pointer flex flex-col';
+        card.onclick = () => openLightbox(item);
+
+        card.innerHTML = `
+          <div class="relative aspect-[4/5] bg-black overflow-hidden">
+            <img
+              src="${item.src}"
+              alt="${item.title}"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              onerror="handleGalleryImgFallback(this, '${item.title.replace(/'/g, "\\'")}', '${item.category}')"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 border border-gold/40 text-gold text-[9px] font-bold tracking-[0.15em] uppercase">
+              ${item.category}
+            </span>
+            <div class="absolute bottom-3 inset-x-3 flex items-end justify-between">
+              <div>
+                <h3 class="font-serif text-sm font-bold text-white leading-snug">${item.title}</h3>
+                <span class="text-[11px] text-gray-300">${item.zone}</span>
+              </div>
+              <span class="w-8 h-8 rounded-full bg-gold/90 text-black flex items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition-opacity">
+                <i class="fa-solid fa-expand"></i>
+              </span>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Fallback elegante si el archivo local ./assets/galeria/tatuaje-XX.jpg aún no ha sido colocado en VS Code
+    function handleGalleryImgFallback(imgEl, title, category) {
+      if (imgEl.dataset.fallback) return;
+      imgEl.dataset.fallback = 'true';
+
+      const svg = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+          <rect width="400" height="500" fill="#080809"/>
+          <rect x="16" y="16" width="368" height="468" fill="none" stroke="#C5A059" stroke-opacity="0.35" stroke-width="1"/>
+          <circle cx="200" cy="185" r="56" fill="none" stroke="#C5A059" stroke-opacity="0.5" stroke-width="1.5"/>
+          <text x="200" y="202" text-anchor="middle" fill="#C5A059" font-family="Georgia, serif" font-size="48">R</text>
+          <text x="200" y="285" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-size="15" font-weight="bold">${title.substring(0, 28)}</text>
+          <text x="200" y="310" text-anchor="middle" fill="#C5A059" font-family="Arial, sans-serif" font-size="10" letter-spacing="2">${category.toUpperCase()}</text>
+          <text x="200" y="365" text-anchor="middle" fill="#71717A" font-family="Arial, sans-serif" font-size="10">RINO TATTOO STUDIO · PORTAFOLIO</text>
+        </svg>
+      `;
+      imgEl.src = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+    }
+
+    // Eventos de botones de filtro de galería
+    document.querySelectorAll('.gallery-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.gallery-filter-btn').forEach(b => {
+          b.classList.remove('bg-gold', 'text-black', 'font-bold');
+          b.classList.add('bg-charcoal', 'text-gray-300', 'border', 'border-white/10');
+        });
+        btn.classList.remove('bg-charcoal', 'text-gray-300', 'border', 'border-white/10');
+        btn.classList.add('bg-gold', 'text-black', 'font-bold');
+
+        currentGalleryFilter = btn.dataset.category;
+        renderGallery();
+      });
+    });
+
+    function openLightbox(item) {
+      currentLightboxItem = item;
+      document.getElementById('lbImage').src = item.src;
+      document.getElementById('lbCategory').textContent = item.category;
+      document.getElementById('lbTitle').textContent = item.title;
+      document.getElementById('lbDescription').textContent = item.description || 'Obra original realizada por Mario en Rino Tattoo Studio.';
+      document.getElementById('lbZone').textContent = item.zone;
+      document.getElementById('lightboxModal').classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightboxModal').classList.add('hidden');
+    }
+
+    function quoteSimilarFromLightbox() {
+      if (!currentLightboxItem) return;
+      closeLightbox();
+      const descField = document.getElementById('bkDescription');
+      const zoneField = document.getElementById('bkZone');
+      descField.value = `Hola, me gustaría cotizar un tatuaje inspirado en "${currentLightboxItem.title}" (${currentLightboxItem.category}). `;
+      zoneField.value = currentLightboxItem.zone;
+      document.getElementById('reservar').scrollIntoView({ behavior: 'smooth' });
+      showToast('Referencia cargada en el formulario de reserva.');
+    }
+
+    // Carga múltiple de fotos reales desde PC/celular
+    function batchUploadGalleryPhotos(event) {
+      const files = Array.from(event.target.files);
+      if (!files.length) return;
+
+      const items = getGalleryItems();
+      let loaded = 0;
+
+      files.forEach((file, idx) => {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          if (idx < items.length) {
+            items[idx].src = e.target.result;
+          } else {
+            items.unshift({
+              id: 'custom_' + Date.now() + '_' + idx,
+              title: file.name.replace(/\.[^/.]+$/, ''),
+              category: 'Realismo Black & Grey',
+              zone: 'Pieza Personalizada',
+              src: e.target.result,
+              description: 'Trabajo oficial de Rino Tattoo Studio.'
+            });
+          }
+          loaded++;
+          if (loaded === files.length) {
+            setStorage(STORAGE_KEYS.GALLERY, items);
+            renderGallery();
+            renderAdminGallery();
+            showToast(`${loaded} fotografía(s) cargadas en la galería oficial.`);
+          }
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    // =========================================================================
+    // 5. SISTEMA DE RESERVAS Y DISPONIBILIDAD DINÁMICA
+    // =========================================================================
+    let bookingRefImageBase64 = '';
+
+    function initDateInputMin() {
+      const dateInput = document.getElementById('bkDate');
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.min = today;
+      dateInput.value = today;
+      updateAvailableTimeSlots();
+    }
+
+    function toggleCoverupAlert() {
+      const isChecked = document.getElementById('bkIsCoverup').checked;
+      const hint = document.getElementById('coverupHint');
+      if (isChecked) {
+        hint.classList.remove('text-gray-400');
+        hint.classList.add('text-gold-light', 'font-medium');
+      } else {
+        hint.classList.add('text-gray-400');
+        hint.classList.remove('text-gold-light', 'font-medium');
+      }
+    }
+
+    function previewBookingRefImage(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        bookingRefImageBase64 = e.target.result;
+        document.getElementById('refPreviewImg').src = bookingRefImageBase64;
+        document.getElementById('refPreviewBox').classList.remove('hidden');
+        document.getElementById('refFileLabel').textContent = file.name;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function clearBookingRefImage() {
+      bookingRefImageBase64 = '';
+      document.getElementById('bkRefImage').value = '';
+      document.getElementById('refPreviewBox').classList.add('hidden');
+      document.getElementById('refFileLabel').textContent = 'Subir imagen de referencia o tatuaje actual';
+    }
+
+    function updateAvailableTimeSlots() {
+      const dateVal = document.getElementById('bkDate').value;
+      const timeSelect = document.getElementById('bkTime');
+      const msgEl = document.getElementById('dateAvailabilityMsg');
+
+      if (!dateVal) return;
+
+      const selectedDate = new Date(dateVal + 'T12:00:00');
+      const dayOfWeek = selectedDate.getDay(); // 0 = Domingo, 6 = Sábado
+      const blockedDates = getStorage(STORAGE_KEYS.BLOCKED_DATES, []);
+      const isBlockedDay = blockedDates.find(b => b.date === dateVal);
+
+      timeSelect.innerHTML = '';
+
+      // Domingo Cerrado
+      if (dayOfWeek === 0) {
+        timeSelect.innerHTML = '<option value="">Domingo Cerrado — Elige otro día</option>';
+        msgEl.innerHTML = '<span class="text-rose-400 font-semibold">Los domingos el estudio permanece cerrado.</span>';
+        return;
+      }
+
+      // Día bloqueado por Mario en el panel privado
+      if (isBlockedDay) {
+        timeSelect.innerHTML = '<option value="">Fecha no disponible — Agenda completa</option>';
+        msgEl.innerHTML = `<span class="text-rose-400 font-semibold">Fecha bloqueada (${isBlockedDay.reason || 'Agenda completa'}).</span>`;
+        return;
+      }
+
+      const configuredSlots = getStorage(STORAGE_KEYS.TIME_SLOTS, DEFAULT_TIME_SLOTS);
+      const existingBookings = getStorage(STORAGE_KEYS.BOOKINGS, []);
+
+      // Filtrar horarios activos, sábado hasta 15:00 y no ocupados
+      const available = configuredSlots.filter(slot => {
+        if (!slot.active) return false;
+        if (dayOfWeek === 6 && slot.time > '15:00') return false;
+        const alreadyBooked = existingBookings.some(
+          b => b.date === dateVal && b.time === slot.time && b.status !== 'Cancelada'
+        );
+        return !alreadyBooked;
+      });
+
+      if (available.length === 0) {
+        timeSelect.innerHTML = '<option value="">Sin bloques disponibles este día</option>';
+        msgEl.innerHTML = '<span class="text-amber-400">Todos los horarios de este día están ocupados.</span>';
+        return;
+      }
+
+      msgEl.innerHTML = dayOfWeek === 6
+        ? '<span class="text-gold">Sábado: Atención de 09:00 a 15:00 hrs.</span>'
+        : '<span class="text-emerald-400">Fecha disponible · Selecciona tu bloque horario.</span>';
+
+      available.forEach(s => {
+        const opt = document.createElement('option');
+        opt.value = s.time;
+        opt.textContent = `${s.time} hrs`;
+        timeSelect.appendChild(opt);
+      });
+    }
+
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const timeVal = document.getElementById('bkTime').value;
+      if (!timeVal) {
+        showToast('Por favor selecciona una fecha y horario disponible.', 'error');
+        return;
+      }
+
+      const newBooking = {
+        id: 'BK-' + Date.now().toString().slice(-6),
+        name: document.getElementById('bkName').value.trim(),
+        phone: document.getElementById('bkPhone').value.trim(),
+        email: document.getElementById('bkEmail').value.trim(),
+        style: document.getElementById('bkStyle').value,
+        zone: document.getElementById('bkZone').value.trim(),
+        size: document.getElementById('bkSize').value.trim(),
+        isCoverup: document.getElementById('bkIsCoverup').checked,
+        date: document.getElementById('bkDate').value,
+        time: timeVal,
+        description: document.getElementById('bkDescription').value.trim(),
+        refImage: bookingRefImageBase64,
+        status: 'Pendiente',
+        totalPrice: 0,
+        paidAmount: 0,
+        paymentNote: 'Abono reserva $25.000 pendiente',
+        createdAt: new Date().toLocaleDateString('es-CL')
+      };
+
+      const bookings = getStorage(STORAGE_KEYS.BOOKINGS, []);
+      bookings.unshift(newBooking);
+      setStorage(STORAGE_KEYS.BOOKINGS, bookings);
+
+      // Generar mensaje pre-rellenado para WhatsApp de Rino Tattoo Studio (+56 9 3782 2387)
+      const waText = encodeURIComponent(
+        `Hola Rino Tattoo Studio! Acabo de solicitar una reserva en la web:\n` +
+        `• Código: ${newBooking.id}\n` +
+        `• Nombre: ${newBooking.name}\n` +
+        `• Estilo: ${newBooking.style}${newBooking.isCoverup ? ' (Cobertura/Restauración)' : ''}\n` +
+        `• Zona y Tamaño: ${newBooking.zone} (${newBooking.size})\n` +
+        `• Fecha y Hora: ${newBooking.date} a las ${newBooking.time} hrs\n` +
+        `• Idea: ${newBooking.description}`
+      );
+
+      document.getElementById('bookingSuccessSummary').innerHTML =
+        `Código de solicitud: <strong class="text-gold">${newBooking.id}</strong>.<br/>` +
+        `Hemos registrado tu solicitud para el <strong>${newBooking.date} a las ${newBooking.time} hrs</strong>. Envía tu resumen por WhatsApp para coordinar la evaluación y el abono de <strong>$25.000 CLP</strong>.`;
+
+      document.getElementById('bookingWhatsappDirectLink').href = `https://wa.me/56937822387?text=${waText}`;
+      document.getElementById('bookingForm').classList.add('hidden');
+      document.getElementById('bookingSuccessCard').classList.remove('hidden');
+
+      updateAvailableTimeSlots();
+      showToast('Solicitud de reserva enviada con éxito.');
+    });
+
+    function resetBookingView() {
+      document.getElementById('bookingForm').reset();
+      clearBookingRefImage();
+      initDateInputMin();
+      document.getElementById('bookingSuccessCard').classList.add('hidden');
+      document.getElementById('bookingForm').classList.remove('hidden');
+    }
+
+    // =========================================================================
+    // 6. PANEL PRIVADO DE ADMINISTRACIÓN PARA MARIO
+    // =========================================================================
+    function openAdminModal() {
+      document.getElementById('adminModal').classList.remove('hidden');
+      const isLogged = sessionStorage.getItem(STORAGE_KEYS.ADMIN_SESSION) === 'true';
+      if (isLogged) {
+        showDashboardView();
+      } else {
+        document.getElementById('adminLoginView').classList.remove('hidden');
+        document.getElementById('adminDashboardView').classList.add('hidden');
+      }
+    }
+
+    function closeAdminModal() {
+      document.getElementById('adminModal').classList.add('hidden');
+    }
+
+    document.getElementById('adminLoginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const user = document.getElementById('adminUserInput').value.trim().toLowerCase();
+      const pass = document.getElementById('adminPassInput').value;
+      const creds = getStorage(STORAGE_KEYS.ADMIN_AUTH, { user: 'mario', pass: 'rino2026' });
+
+      if (user === creds.user && pass === creds.pass) {
+        sessionStorage.setItem(STORAGE_KEYS.ADMIN_SESSION, 'true');
+        document.getElementById('navAdminBtnText').textContent = 'Panel Mario';
+        showDashboardView();
+        showToast('Bienvenido al panel privado, Mario.');
+      } else {
+        showToast('Usuario o contraseña incorrectos.', 'error');
+      }
+    });
+
+    function logoutAdmin() {
+      sessionStorage.removeItem(STORAGE_KEYS.ADMIN_SESSION);
+      document.getElementById('navAdminBtnText').textContent = 'Acceso Tatuador';
+      document.getElementById('adminDashboardView').classList.add('hidden');
+      document.getElementById('adminLoginView').classList.remove('hidden');
+      showToast('Sesión cerrada.');
+    }
+
+    function showDashboardView() {
+      document.getElementById('adminLoginView').classList.add('hidden');
+      document.getElementById('adminDashboardView').classList.remove('hidden');
+      refreshAllAdminData();
+    }
+
+    function switchAdminTab(tabName) {
+      document.querySelectorAll('.admin-tab-content').forEach(el => el.classList.add('hidden'));
+      document.getElementById('tab-' + tabName).classList.remove('hidden');
+
+      document.querySelectorAll('.admin-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-gold', 'text-black', 'font-semibold');
+        btn.classList.add('bg-charcoal', 'text-gray-300');
+      });
+      const activeBtn = document.querySelector(`.admin-tab-btn[data-tab="${tabName}"]`);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-charcoal', 'text-gray-300');
+        activeBtn.classList.add('bg-gold', 'text-black', 'font-semibold');
+      }
+      refreshAllAdminData();
+    }
+
+    function refreshAllAdminData() {
+      renderAdminSummary();
+      renderAdminBookings();
+      renderAdminAvailability();
+      renderAdminPayments();
+      renderAdminGallery();
+    }
+
+    // --- TAB 1: RESUMEN ---
+    function renderAdminSummary() {
+      const bookings = getStorage(STORAGE_KEYS.BOOKINGS, []);
+      const pending = bookings.filter(b => b.status === 'Pendiente').length;
+      const confirmed = bookings.filter(b => b.status === 'Confirmada').length;
+      const paidTotal = bookings.reduce((acc, b) => acc + Number(b.paidAmount || 0), 0);
+      const balanceTotal = bookings.reduce((acc, b) => {
+        if (b.status === 'Cancelada') return acc;
+        const diff = Number(b.totalPrice || 0) - Number(b.paidAmount || 0);
+        return acc + (diff > 0 ? diff : 0);
+      }, 0);
+
+      document.getElementById('kpiPending').textContent = pending;
+      document.getElementById('kpiConfirmed').textContent = confirmed;
+      document.getElementById('kpiPaidTotal').textContent = formatCLP(paidTotal);
+      document.getElementById('kpiBalanceTotal').textContent = formatCLP(balanceTotal);
+
+      const upcomingEl = document.getElementById('summaryUpcomingList');
+      const activeBookings = bookings.filter(b => b.status !== 'Cancelada').slice(0, 5);
+
+      if (activeBookings.length === 0) {
+        upcomingEl.innerHTML = '<p class="text-xs text-gray-500">Aún no hay sesiones registradas en la agenda.</p>';
+        return;
+      }
+
+      upcomingEl.innerHTML = activeBookings.map(b => `
+        <div class="p-3.5 rounded-lg bg-charcoal border border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs">
+          <div>
+            <span class="font-bold text-white">${b.name}</span>
+            <span class="text-gold ml-2">${b.date} · ${b.time} hrs</span>
+            <span class="block text-gray-400 mt-0.5">${b.style} — ${b.zone} (${b.size})</span>
+          </div>
+          <span class="px-2.5 py-1 rounded text-[10px] font-bold uppercase ${b.status === 'Confirmada' ? 'bg-emerald-500/20 text-emerald-300' : 'bg-amber-500/20 text-amber-300'}">
+            ${b.status}
+          </span>
+        </div>
+      `).join('');
+    }
+
+    // --- TAB 2: RESERVAS ---
+    function openNewManualBookingForm() {
+      document.getElementById('manualBookingBox').classList.remove('hidden');
+    }
+
+    function saveManualBooking() {
+      const name = document.getElementById('mName').value.trim();
+      const date = document.getElementById('mDate').value;
+      if (!name || !date) {
+        showToast('Ingresa al menos el nombre y la fecha.', 'error');
+        return;
+      }
+
+      const bookings = getStorage(STORAGE_KEYS.BOOKINGS, []);
+      bookings.unshift({
+        id: 'MAN-' + Date.now().toString().slice(-5),
+        name,
+        phone: document.getElementById('mPhone').value.trim() || 'Sin teléfono',
+        email: 'Registro directo',
+        style: document.getElementById('mStyle').value.trim() || 'Tatuaje Personalizado',
+        zone: document.getElementById('mZone').value.trim() || 'Por definir',
+        size: 'A medida',
+        isCoverup: false,
+        date,
+        time: document.getElementById('mTime').value || '11:00',
+        description: 'Cita ingresada manualmente por Mario.',
+        refImage: '',
+        status: 'Confirmada',
+        totalPrice: 0,
+        paidAmount: 25000,
+        paymentNote: 'Abono inicial registrado',
+        createdAt: new Date().toLocaleDateString('es-CL')
+      });
+
+      setStorage(STORAGE_KEYS.BOOKINGS, bookings);
+      document.getElementById('manualBookingBox').classList.add('hidden');
+      refreshAllAdminData();
+      updateAvailableTimeSlots();
+      showToast('Cita manual añadida a la agenda.');
+    }
+
+    function renderAdminBookings() {
+      const bookings = getStorage(STORAGE_KEYS.BOOKINGS, []);
+      const container = document.getElementById('adminBookingsList');
+
+      if (bookings.length === 0) {
+        container.innerHTML = '<div class="p-8 text-center text-xs text-gray-500 border border-white/10 rounded-xl">No hay solicitudes de reserva todavía.</div>';
+        return;
+      }
+
+      container.innerHTML = bookings.map((b, index) => {
+        const badgeClass = b.status === 'Confirmada'
+          ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
+          : b.status === 'Cancelada'
+            ? 'bg-rose-500/20 text-rose-300 border-rose-500/40'
+            : 'bg-amber-500/20 text-amber-300 border-amber-500/40';
+
+        const cleanPhone = (b.phone || '').replace(/\D/g, '');
+        const clientWaMsg = encodeURIComponent(
+          `Hola ${b.name}, te escribimos de Rino Tattoo Studio para confirmar tu sesión el ${b.date} a las ${b.time} hrs en Av. Chile 378, Llolleo.`
+        );
+
+        return `
+          <div class="p-5 rounded-xl bg-black border border-white/10 space-y-4">
+            <div class="flex flex-wrap items-start justify-between gap-4">
+              <div class="space-y-1">
+                <div class="flex items-center gap-2.5">
+                  <span class="text-xs font-mono text-gold">${b.id}</span>
+                  <h4 class="font-serif text-base font-bold text-white">${b.name}</h4>
+                  <span class="px-2.5 py-0.5 rounded border text-[10px] font-bold uppercase ${badgeClass}">${b.status}</span>
+                </div>
+                <p class="text-xs text-gray-400">
+                  <i class="fa-solid fa-phone text-gold mr-1"></i> ${b.phone} ·
+                  <i class="fa-solid fa-envelope text-gold ml-2 mr-1"></i> ${b.email}
+                </p>
+                <p class="text-xs text-gray-300 pt-1">
+                  <strong class="text-white">Proyecto:</strong> ${b.style} | ${b.zone} (${b.size})
+                  ${b.isCoverup ? '<span class="ml-2 px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 text-[10px]">Cobertura/Restauración</span>' : ''}
+                </p>
+                <p class="text-xs text-gray-400 italic">"${b.description}"</p>
+              </div>
+
+              ${b.refImage ? `
+                <a href="${b.refImage}" target="_blank" class="shrink-0 block w-20 h-20 rounded-lg overflow-hidden border border-gold/40" title="Ver imagen de referencia">
+                  <img src="${b.refImage}" alt="Referencia" class="w-full h-full object-cover" />
+                </a>
+              ` : ''}
+            </div>
+
+            <!-- Controles de Fecha, Hora y Estado -->
+            <div class="pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-3">
+              <div class="flex flex-wrap items-center gap-2">
+                <input type="date" value="${b.date}" onchange="rescheduleBooking(${index}, this.value, null)" class="studio-input px-2.5 py-1.5 rounded text-xs" />
+                <input type="time" value="${b.time}" onchange="rescheduleBooking(${index}, null, this.value)" class="studio-input px-2.5 py-1.5 rounded text-xs" />
+              </div>
+
+              <div class="flex flex-wrap items-center gap-2">
+                <button onclick="setBookingStatus(${index}, 'Confirmada')" class="px-3 py-1.5 rounded bg-emerald-600 hover:bg-emerald-500 text-white text-[11px] font-bold uppercase">
+                  Confirmar
+                </button>
+                <button onclick="setBookingStatus(${index}, 'Cancelada')" class="px-3 py-1.5 rounded bg-rose-600/80 hover:bg-rose-600 text-white text-[11px] font-bold uppercase">
+                  Cancelar
+                </button>
+                ${cleanPhone ? `
+                  <a href="https://wa.me/${cleanPhone}?text=${clientWaMsg}" target="_blank" class="px-3 py-1.5 rounded border border-emerald-500/40 text-emerald-400 hover:bg-emerald-500/10 text-[11px] font-semibold uppercase">
+                    <i class="fa-brands fa-whatsapp mr-1"></i>Avisar Cliente
+                  </a>
+                ` : ''}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function setBookingStatus(index, status) {
+      const bookings = getStorage(STORAGE_KEYS.BOOKINGS, []);
+      if (!bookings[index]) return;
+      bookings[index].status = status;
+      setStorage(STORAGE_KEYS.BOOKINGS, bookings);
+      refreshAllAdminData();
+      updateAvailableTimeSlots();
+      showToast(`Reserva actualizada a: ${status}`);
+    }
+
+    function rescheduleBooking(index, newDate, newTime) {
+      const bookings = getStorage(STORAGE_KEYS.BOOKINGS, []);
+      if (!bookings[index]) return;
+      if (newDate) bookings[index].date = newDate;
+      if (newTime) bookings[index].time = newTime;
+      setStorage(STORAGE_KEYS.BOOKINGS, bookings);
+      updateAvailableTimeSlots();
+      showToast('Fecha/horario de la sesión modificado.');
+    }
+
+    // --- TAB 3: CALENDARIO Y DISPONIBILIDAD ---
+    function renderAdminAvailability() {
+      const blocked = getStorage(STORAGE_KEYS.BLOCKED_DATES, []);
+      const blockedList = document.getElementById('blockedDatesList');
+
+      blockedList.innerHTML = blocked.length === 0
+        ? '<p class="text-xs text-gray-500">No hay días bloqueados actualmente.</p>'
+        : blocked.map((b, idx) => `
+          <div class="flex items-center justify-between p-3 rounded-lg bg-charcoal border border-white/10 text-xs">
+            <div>
+              <span class="font-bold text-white">${b.date}</span>
+              <span class="text-gray-400 ml-2">— ${b.reason || 'Bloqueado'}</span>
+            </div>
+            <button onclick="removeBlockedDate(${idx})" class="text-rose-400 hover:text-rose-300 uppercase text-[10px] font-bold">
+              Desbloquear
+            </button>
+          </div>
+        `).join('');
+
+      const slots = getStorage(STORAGE_KEYS.TIME_SLOTS, DEFAULT_TIME_SLOTS);
+      const slotsList = document.getElementById('timeSlotsConfigList');
+
+      slotsList.innerHTML = slots.map((s, idx) => `
+        <button onclick="toggleTimeSlot(${idx})" class="p-3 rounded-lg border text-xs font-bold flex items-center justify-between transition-all ${s.active ? 'bg-gold/15 border-gold text-white' : 'bg-charcoal border-white/10 text-gray-500'}">
+          <span>${s.time} hrs</span>
+          <i class="fa-solid ${s.active ? 'fa-toggle-on text-gold' : 'fa-toggle-off'} text-base"></i>
+        </button>
+      `).join('');
+    }
+
+    function addBlockedDate() {
+      const date = document.getElementById('blockDateInput').value;
+      const reason = document.getElementById('blockReasonInput').value.trim();
+      if (!date) {
+        showToast('Selecciona una fecha para bloquear.', 'error');
+        return;
+      }
+      const blocked = getStorage(STORAGE_KEYS.BLOCKED_DATES, []);
+      blocked.push({ date, reason: reason || 'Día no disponible' });
+      setStorage(STORAGE_KEYS.BLOCKED_DATES, blocked);
+      document.getElementById('blockDateInput').value = '';
+      document.getElementById('blockReasonInput').value = '';
+      renderAdminAvailability();
+      updateAvailableTimeSlots();
+      showToast(`Día ${date} bloqueado en el calendario.`);
+    }
+
+    function removeBlockedDate(idx) {
+      const blocked = getStorage(STORAGE_KEYS.BLOCKED_DATES, []);
+      blocked.splice(idx, 1);
+      setStorage(STORAGE_KEYS.BLOCKED_DATES, blocked);
+      renderAdminAvailability();
+      updateAvailableTimeSlots();
+      showToast('Día desbloqueado.');
+    }
+
+    function toggleTimeSlot(idx) {
+      const slots = getStorage(STORAGE_KEYS.TIME_SLOTS, DEFAULT_TIME_SLOTS);
+      slots[idx].active = !slots[idx].active;
+      setStorage(STORAGE_KEYS.TIME_SLOTS, slots);
+      renderAdminAvailability();
+      updateAvailableTimeSlots();
+    }
+
+    // --- TAB 4: PAGOS Y ANTICIPOS ---
+    function renderAdminPayments() {
+      const bookings = getStorage(STORAGE_KEYS.BOOKINGS, []);
+      const container = document.getElementById('adminPaymentsList');
+
+      if (bookings.length === 0) {
+        container.innerHTML = '<div class="p-8 text-center text-xs text-gray-500 border border-white/10 rounded-xl">No hay reservas para gestionar pagos.</div>';
+        return;
+      }
+
+      container.innerHTML = bookings.map((b, idx) => {
+        const total = Number(b.totalPrice || 0);
+        const paid = Number(b.paidAmount || 0);
+        const balance = Math.max(0, total - paid);
+        const isFullyPaid = total > 0 && balance === 0;
+
+        return `
+          <div class="p-5 rounded-xl bg-black border border-white/10 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h4 class="font-serif text-sm font-bold text-white">${b.name} <span class="text-gold font-mono text-xs ml-2">(${b.id})</span></h4>
+                <span class="text-xs text-gray-400">${b.style} · Sesión: ${b.date}</span>
+              </div>
+              <span class="px-3 py-1 rounded text-[10px] font-bold uppercase ${isFullyPaid ? 'bg-emerald-500/20 text-emerald-300' : paid >= 25000 ? 'bg-gold/20 text-gold' : 'bg-amber-500/20 text-amber-300'}">
+                ${isFullyPaid ? 'Pagado 100%' : paid >= 25000 ? 'Abono $25.000 Recibido' : 'Anticipo Pendiente'}
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 items-end">
+              <div>
+                <label class="block text-[10px] text-gray-400 uppercase mb-1">Valor Total Cotizado (CLP)</label>
+                <input type="number" step="5000" value="${total}" id="payTotal_${idx}" class="studio-input w-full px-3 py-2 rounded text-xs" />
+              </div>
+              <div>
+                <label class="block text-[10px] text-gray-400 uppercase mb-1">Monto Abonado / Pagado</label>
+                <input type="number" step="5000" value="${paid}" id="payPaid_${idx}" class="studio-input w-full px-3 py-2 rounded text-xs" />
+              </div>
+              <div>
+                <label class="block text-[10px] text-gray-400 uppercase mb-1">Comprobante / Nota</label>
+                <input type="text" value="${b.paymentNote || ''}" id="payNote_${idx}" placeholder="Ej: Transferencia BancoEstado" class="studio-input w-full px-3 py-2 rounded text-xs" />
+              </div>
+              <div class="flex gap-2">
+                <button onclick="saveBookingPayment(${idx})" class="flex-1 py-2 rounded bg-gold hover:bg-gold-light text-black font-bold text-xs uppercase">
+                  Guardar
+                </button>
+                <button onclick="quickDeposit25k(${idx})" class="px-3 py-2 rounded border border-gold/40 text-gold text-[10px] font-bold uppercase" title="Registrar abono oficial de $25.000">
+                  +$25K
+                </button>
+              </div>
+            </div>
+
+            <div class="text-xs text-gray-400 flex justify-between border-t border-white/5 pt-2">
+              <span>Pagado: <strong class="text-emerald-400">${formatCLP(paid)}</strong></span>
+              <span>Saldo Restante: <strong class="text-white">${formatCLP(balance)}</strong></span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function saveBookingPayment(idx) {
+      const bookings = getStorage(STORAGE_KEYS.BOOKINGS, []);
+      if (!bookings[idx]) return;
+      bookings[idx].totalPrice = Number(document.getElementById(`payTotal_${idx}`).value || 0);
+      bookings[idx].paidAmount = Number(document.getElementById(`payPaid_${idx}`).value || 0);
+      bookings[idx].paymentNote = document.getElementById(`payNote_${idx}`).value.trim();
+      setStorage(STORAGE_KEYS.BOOKINGS, bookings);
+      refreshAllAdminData();
+      showToast('Registro financiero actualizado.');
+    }
+
+    function quickDeposit25k(idx) {
+      const bookings = getStorage(STORAGE_KEYS.BOOKINGS, []);
+      if (!bookings[idx]) return;
+      bookings[idx].paidAmount = Number(bookings[idx].paidAmount || 0) + 25000;
+      bookings[idx].paymentNote = 'Abono reserva $25.000 CLP confirmado';
+      setStorage(STORAGE_KEYS.BOOKINGS, bookings);
+      refreshAllAdminData();
+      showToast('Abono de $25.000 CLP registrado.');
+    }
+
+    // --- TAB 5: GALERÍA ADMIN ---
+    function renderAdminGallery() {
+      const items = getGalleryItems();
+      const list = document.getElementById('adminGalleryList');
+
+      list.innerHTML = items.map((item, idx) => `
+        <div class="p-2.5 rounded-xl bg-black border border-white/10 space-y-2">
+          <div class="aspect-square rounded-lg overflow-hidden bg-charcoal">
+            <img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover" onerror="handleGalleryImgFallback(this, '${item.title.replace(/'/g, "\\'")}', '${item.category}')" />
+          </div>
+          <p class="text-[11px] font-bold text-white truncate">${item.title}</p>
+          <span class="block text-[9px] text-gold uppercase">${item.category}</span>
+          <button onclick="deleteGalleryItem(${idx})" class="w-full py-1.5 rounded bg-rose-600/20 hover:bg-rose-600 text-rose-300 hover:text-white text-[10px] font-bold uppercase transition-colors">
+            Eliminar
+          </button>
+        </div>
+      `).join('');
+    }
+
+    function addSingleGalleryPhoto(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const title = document.getElementById('newArtTitle').value.trim() || file.name.replace(/\.[^/.]+$/, '');
+      const category = document.getElementById('newArtCategory').value;
+      const zone = document.getElementById('newArtZone').value.trim() || 'Pieza a medida';
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const items = getGalleryItems();
+        items.unshift({
+          id: 'art_' + Date.now(),
+          title,
+          category,
+          zone,
+          src: e.target.result,
+          description: `Trabajo realizado en Rino Tattoo Studio (${category}).`
+        });
+        setStorage(STORAGE_KEYS.GALLERY, items);
+        document.getElementById('newArtTitle').value = '';
+        document.getElementById('newArtZone').value = '';
+        renderGallery();
+        renderAdminGallery();
+        showToast('Fotografía añadida al portafolio.');
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function deleteGalleryItem(idx) {
+      const items = getGalleryItems();
+      items.splice(idx, 1);
+      setStorage(STORAGE_KEYS.GALLERY, items);
+      renderGallery();
+      renderAdminGallery();
+      showToast('Publicación eliminada de la galería.');
+    }
+
+    // --- TAB 6: SEGURIDAD Y RESPALDO ---
+    function updateAdminPassword() {
+      const newPass = document.getElementById('newAdminPassInput').value.trim();
+      if (newPass.length < 4) {
+        showToast('La contraseña debe tener al menos 4 caracteres.', 'error');
+        return;
+      }
+      setStorage(STORAGE_KEYS.ADMIN_AUTH, { user: 'mario', pass: newPass });
+      document.getElementById('newAdminPassInput').value = '';
+      showToast('Contraseña actualizada correctamente.');
+    }
+
+    function exportStudioBackup() {
+      const backup = {
+        studio: 'Rino Tattoo Studio - San Antonio, Chile',
+        exportedAt: new Date().toISOString(),
+        bookings: getStorage(STORAGE_KEYS.BOOKINGS, []),
+        blockedDates: getStorage(STORAGE_KEYS.BLOCKED_DATES, []),
+        timeSlots: getStorage(STORAGE_KEYS.TIME_SLOTS, DEFAULT_TIME_SLOTS)
+      };
+      const blob = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `respaldo-rino-tattoo-${new Date().toISOString().split('T')[0]}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('Respaldo descargado.');
+    }
+
+    // =========================================================================
+    // 7. MENÚ MÓVIL E INICIALIZACIÓN GLOBAL
+    // =========================================================================
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    function closeMobileMenu() {
+      mobileMenu.classList.add('hidden');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+      applySavedLogoIfExists();
+      renderGallery();
+      initDateInputMin();
+
+      if (sessionStorage.getItem(STORAGE_KEYS.ADMIN_SESSION) === 'true') {
+        document.getElementById('navAdminBtnText').textContent = 'Panel Mario';
+      }
+    });
+  </script>
+</body>
+</html>
