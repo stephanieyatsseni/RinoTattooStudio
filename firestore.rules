@@ -1,0 +1,30 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /bookings/{bookingId} {
+      // Public visitors may only create a new pending request; they cannot read customer records.
+      allow create: if request.resource.data.keys().hasAll([
+          'id', 'name', 'phone', 'email', 'style', 'zone', 'size', 'date', 'time',
+          'description', 'status', 'paidAmount', 'totalPrice'
+        ])
+        && request.resource.data.status == 'Pendiente'
+        && request.resource.data.paidAmount == 0
+        && request.resource.data.totalPrice == 0
+        && request.resource.data.id == bookingId
+        && request.resource.data.name is string
+        && request.resource.data.name.size() <= 120
+        && request.resource.data.phone is string
+        && request.resource.data.phone.size() <= 40
+        && request.resource.data.email is string
+        && request.resource.data.email.size() <= 254
+        && request.resource.data.date is string
+        && request.resource.data.time is string
+        && request.resource.data.description is string
+        && request.resource.data.description.size() <= 3000;
+
+      // Replace the placeholder with Mario's Firebase Authentication UID before publishing.
+      allow read, update, delete: if request.auth != null
+        && request.auth.uid == 'REPLACE_WITH_MARIOS_FIREBASE_AUTH_UID';
+    }
+  }
+}
